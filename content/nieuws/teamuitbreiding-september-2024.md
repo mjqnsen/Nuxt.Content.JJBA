@@ -1,19 +1,19 @@
 ---
-title: "Zenith Architectuur Breidt Team Uit met Drie Nieuwe Medewerkers"
+title: "Jan Jansen bouwkundig Adviseurs Breidt Team Uit met Drie Nieuwe Medewerkers"
 description: "Wij zijn verheugd drie getalenteerde professionals te verwelkomen in ons groeiende team: een senior architect, duurzaamheidsconsultant en interieurontwerper."
 date: "2024-09-15"
-thumbnail: "/images/news/team-expansion-thumb.jpg"
-image: "/images/news/team-expansion.jpg"
+thumbnail: "/images/news/Placeholder.svg"
+image: "/images/news/Placeholder.svg"
 ---
 
-Nu ons bureau blijft groeien en spannende nieuwe projecten onderneemt, zijn wij verheugd de toevoeging van drie uitzonderlijke professionals aan het Zenith Architectuur team aan te kondigen.
+Nu ons bureau blijft groeien en spannende nieuwe projecten onderneemt, zijn wij verheugd de toevoeging van drie uitzonderlijke professionals aan het Jan Jansen bouwkundig Adviseurs team aan te kondigen.
 
 ## Maak Kennis met Onze Nieuwe Teamleden
 
 ### James Liu, Senior Architect
 James brengt 15 jaar ervaring in grootschalige commerciële projecten naar ons team. Voorheen bij Harrison & Associates leidde hij het ontwerp van verschillende bekroonde kantoorcomplexen en gemengde ontwikkelingen. James heeft een Master in Architectuur van UC Berkeley en is gepassioneerd over het creëren van ruimtes die stedelijke connectiviteit verbeteren.
 
-"Ik ben enthousiast om bij Zenith Architectuur te komen vanwege hun toewijding aan duurzaam ontwerp en innovatie," zei James. "De reputatie van het bureau voor het verleggen van grenzen terwijl ontwerpexcellentie behouden blijft, sluit perfect aan bij mijn eigen waarden en doelen."
+"Ik ben enthousiast om bij Jan Jansen bouwkundig Adviseurs te komen vanwege hun toewijding aan duurzaam ontwerp en innovatie," zei James. "De reputatie van het bureau voor het verleggen van grenzen terwijl ontwerpexcellentie behouden blijft, sluit perfect aan bij mijn eigen waarden en doelen."
 
 ### Dr. Rachel Green, Duurzaamheidsconsultant
 Dr. Green komt naar ons vanuit de Green Building Council, waar zij certificatiestandaarden voor duurzame bouw ontwikkelde. Zij heeft een PhD in Milieutechniek en is auteur van talrijke papers over duurzame bouwpraktijken. Rachel zal ons helpen milieuoverwegingen verder te integreren in al onze projecten.

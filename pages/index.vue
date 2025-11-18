@@ -261,6 +261,11 @@
 </template>
 
 <script setup>
+// Define layout
+definePageMeta({
+  layout: 'default'
+})
+
 // Fetch recent news articles
 const { data: recentNews, pending } = await useAsyncData('recent-nieuws', () => 
   queryContent('nieuws').sort({ date: -1 }).limit(3).find()

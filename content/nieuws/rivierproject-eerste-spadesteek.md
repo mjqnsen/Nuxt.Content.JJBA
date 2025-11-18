@@ -2,13 +2,13 @@
 title: "Nieuw Woonproject Breekt Grond in Rivierdistrict"
 description: "De bouw begint van onze nieuwste woningbouwontwikkeling met 120 duurzame wooneenheden ontworpen om gemeenschap en milieuverantwoordelijkheid te bevorderen."
 date: "2024-10-28"
-thumbnail: "/images/news/riverside-groundbreaking-thumb.jpg"
-image: "/images/news/riverside-groundbreaking.jpg"
+thumbnail: "/images/news/Placeholder.svg"
+image: "/images/news/Placeholder.svg"
 gallery:
-  - src: "/images/news/riverside-rendering-1.jpg"
+  - src: "/images/news/Placeholder.svg"
     alt: "Rivierproject luchtfoto rendering"
     caption: "Luchtfoto van de geplande Rivier Gemeenschap ontwikkeling"
-  - src: "/images/news/riverside-rendering-2.jpg"
+  - src: "/images/news/Placeholder.svg"
     alt: "Rivierproject binnenplaats"
     caption: "Centrale binnenplaats met inheemse landschapsarchitectuur en gemeenschapsruimtes"
 ---

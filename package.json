@@ -6,7 +6,8 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "push": "git config http.sslverify false && git push origin master && git config http.sslverify true"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",

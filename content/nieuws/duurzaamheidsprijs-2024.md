@@ -1,19 +1,19 @@
 ---
-title: "Zenith Architectuur Wint Nationale Duurzaamheidsprijs"
+title: "Jan Jansen bouwkundig Adviseurs Wint Nationale Duurzaamheidsprijs"
 description: "Ons nieuwste project, de EcoToren, is erkend met de 2024 Nationale Prijs voor Duurzaamheid in Architectuur voor het innovatieve groene gebouwontwerp."
 date: "2024-11-15"
-thumbnail: "/images/news/sustainability-award-thumb.jpg"
-image: "/images/news/sustainability-award.jpg"
+thumbnail: "/images/news/Placeholder.svg"
+image: "/images/news/Placeholder.svg"
 gallery:
-  - src: "/images/news/ecotower-exterior.jpg"
+  - src: "/images/news/Placeholder.svg"
     alt: "EcoToren buitenkant"
     caption: "De EcoToren heeft een levende gevel met geïntegreerde zonnepanelen"
-  - src: "/images/news/ecotower-interior.jpg"
+  - src: "/images/news/Placeholder.svg"
     alt: "EcoToren interieur"
     caption: "Natuurlijke verlichting en duurzame materialen overal"
 ---
 
-Wij zijn verheugd om aan te kondigen dat Zenith Architectuur de prestigieuze 2024 Nationale Prijs voor Duurzaamheid in Architectuur heeft gewonnen voor ons baanbrekende EcoToren project.
+Wij zijn verheugd om aan te kondigen dat Jan Jansen bouwkundig Adviseurs de prestigieuze 2024 Nationale Prijs voor Duurzaamheid in Architectuur heeft gewonnen voor ons baanbrekende EcoToren project.
 
 ## Over de Prijs
 

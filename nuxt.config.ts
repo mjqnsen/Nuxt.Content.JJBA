@@ -33,7 +33,7 @@ export default defineNuxtConfig({
       ],
       link: [
         { rel: 'icon', type: 'image/png', href: '/JJBAIcon.png' },
-        { rel: 'canonical', href: 'https://jan-jansen-architectuur.pages.dev' }
+        { rel: 'canonical', href: 'https://janjansen.pages.dev' }
       ]
     }
   },
