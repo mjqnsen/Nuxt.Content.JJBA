@@ -1,0 +1,9 @@
+# Cloudflare Pages redirects for Dutch routes
+
+# Redirect old English routes to new Dutch routes
+/about /over-ons 301
+/news /nieuws 301
+/news/* /nieuws/:splat 301
+
+# Handle SPA routing
+/* /index.html 200
