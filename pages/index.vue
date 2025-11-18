@@ -1,7 +1,8 @@
 <template>
-  <div>
-    <!-- Hero Section -->
-    <section class="relative bg-gradient-to-br from-orange-600 to-orange-500 text-white overflow-hidden" style="background: linear-gradient(to bottom right, rgb(236, 88, 39), rgb(189, 120, 82))">
+  <NuxtLayout>
+    <div>
+      <!-- Hero Section -->
+      <section class="relative bg-gradient-to-br from-orange-600 to-orange-500 text-white overflow-hidden" style="background: linear-gradient(to bottom right, rgb(236, 88, 39), rgb(189, 120, 82))">
       <div class="absolute inset-0 bg-black/30"></div>
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
         <div class="text-center">
@@ -33,53 +34,11 @@
       </div>
     </section>
 
+
     <!-- Services Section -->
     <section class="py-16 bg-background">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-foreground mb-4">Onze Diensten</h2>
-          <p class="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Wij bieden uitgebreide architectuurdiensten van concept tot oplevering
-          </p>
-        </div>
-        
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <Card class="text-center hover:shadow-lg transition-all duration-300">
-            <template #content>
-              <div class="p-6">
-                <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style="background-color: rgb(236, 88, 39)">
-                  <i class="pi pi-home text-white text-2xl"></i>
-                </div>
-                <h3 class="text-xl font-semibold mb-3 text-foreground">Woningontwerp</h3>
-                <p class="text-muted-foreground">Maatwerk woningen en renovaties die uw levensstijl en waarden weerspiegelen</p>
-              </div>
-            </template>
-          </Card>
-          
-          <Card class="text-center hover:shadow-lg transition-all duration-300">
-            <template #content>
-              <div class="p-6">
-                <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style="background-color: rgb(236, 88, 39)">
-                  <i class="pi pi-building text-white text-2xl"></i>
-                </div>
-                <h3 class="text-xl font-semibold mb-3 text-foreground">Commerciële Projecten</h3>
-                <p class="text-muted-foreground">Kantoorgebouwen, winkelruimtes en gemengde ontwikkelingen</p>
-              </div>
-            </template>
-          </Card>
-          
-          <Card class="text-center hover:shadow-lg transition-all duration-300">
-            <template #content>
-              <div class="p-6">
-                <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style="background-color: rgb(236, 88, 39)">
-                  <i class="pi pi-leaf text-white text-2xl"></i>
-                </div>
-                <h3 class="text-xl font-semibold mb-3 text-foreground">Duurzaam Ontwerp</h3>
-                <p class="text-muted-foreground">Milieuvriendelijke oplossingen die de impact op het milieu minimaliseren</p>
-              </div>
-            </template>
-          </Card>
-        </div>
+        <ServicesSection />
       </div>
     </section>
 
@@ -257,7 +216,8 @@
         </div>
       </div>
     </section>
-  </div>
+    </div>
+  </NuxtLayout>
 </template>
 
 <script setup>

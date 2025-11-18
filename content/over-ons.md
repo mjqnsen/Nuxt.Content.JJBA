@@ -1,39 +1,39 @@
-# Over Jan Jansen bouwkundig Adviseurs
+# Over Ons
+## Tekenwerk, Rekenwerk, Goed Bekeken Werk
 
-## Ons Verhaal
+![Kantoorgebouw Westerpoort](/images/about/office-building.jpg "Ons moderne kantoor in Westerpoort")
 
-Opgericht in 2010, staat Jan Jansen bouwkundig Adviseurs al meer dan een decennium aan de voorhoede van innovatief architecturaal ontwerp. Wat begon als een kleine studio met grote dromen is uitgegroeid tot een gerespecteerd bureau dat bekendstaat om het verleggen van grenzen op het gebied van duurzaam en innovatief ontwerp.
+Jan Jansen houdt zich tegenwoordig niet alleen meer bezig met goed teken- en rekenwerk maar richt zich ook op de nieuwe markt van het duurzaamheidsvraagstuk.
 
-## Onze Filosofie
-
-Wij geloven dat architectuur zowel mensen als de planeet moet dienen. Onze ontwerpen zijn gebaseerd op het principe dat gebouwen het leven van degenen die ze gebruiken moeten verbeteren en tegelijkertijd de impact op het milieu moeten minimaliseren. Elk project dat wij ondernemen is een kans om iets betekenisvols en blijvends te creëren.
+![Team aan het werk](/images/about/team-work.jpg "Ons team tijdens een projectbespreking")
 
 ## Ons Team
 
-### Sarah Mitchell, Hoofdarchitect
-Met meer dan 20 jaar ervaring in duurzaam ontwerp leidt Sarah ons team met een visie voor architectuur die harmonieus samenwerkt met de natuur. Zij heeft een Master in Architectuur van MIT en is een LEED AP gecertificeerde professional.
+### Ferdinand van den Oord - ISSO Gecertificeerd EP-adviseur
 
-### David Chen, Senior Ontwerper
-David brengt expertise in commerciële architectuur en stedelijke planning. Zijn innovatieve benadering van gemengde ontwikkelingen heeft erkenning gekregen van het American Institute of Architects.
+Ferdinand van den Oord is inmiddels ISSO gecertificeerd EP-adviseur woningbouw, utiliteitsbouw en detailopnamen. Hij verzorgt de zogenaamde Energie Prestatie Labels.
 
-### Maria Rodriguez, Projectmanager
-Maria zorgt ervoor dat elk project soepel verloopt van conceptie tot oplevering. Haar aandacht voor detail en klantgerichte benadering is van groot belang geweest voor het succes van ons bureau.
+![Ferdinand van den Oord](/images/about/ferdinand.jpg "Ferdinand van den Oord - ISSO gecertificeerd EP-adviseur")
 
-## Onderscheidingen & Erkenning
+## Onze Vestiging
 
-- **2023**: AIA Nationale Prijs voor Duurzaam Ontwerp
-- **2022**: Green Building Excellence Award
-- **2021**: Regionaal Architectuurbureau van het Jaar
-- **2020**: Innovatie in Woningbouw Ontwerp Award
+De nieuwe vestiging bevindt zich in kantoorgebouw Westerpoort, een lichte moderne werkruimte.
 
-## Onze Toewijding
+![Werkruimte interieur](/images/about/workspace.jpg "Onze lichte en moderne werkruimte")
 
-Wij zijn toegewijd aan:
-- Het ontwerpen van gebouwen die de tand des tijds doorstaan
-- Het integreren van duurzame materialen en energiezuinige systemen
-- Het creëren van ruimtes die gemeenschap en welzijn bevorderen
-- Het vooroplopen in architecturale innovatie
+## Diensten
 
-## Laten We Samenwerken
+Bij Jan Jansen bouwkundig Adviseurs bieden wij een breed scala aan diensten:
 
-Klaar om uw visie tot leven te brengen? [Neem contact met ons op](/contact) om uw architecturale reis met Jan Jansen bouwkundig Adviseurs te beginnen.
+- **Tekenwerk**: Professionele technische tekeningen en ontwerpen
+- **Rekenwerk**: Nauwkeurige berekeningen en analyses
+- **Duurzaamheidsadvies**: Expertise in energiezuinige oplossingen
+- **Energie Prestatie Labels**: Officiële EP-certificering door ISSO gecertificeerde adviseurs
+
+## Contact Opnemen
+
+Heeft u vragen over onze diensten of wilt u een project bespreken? 
+
+[**Neem direct contact met ons op**](/contact) voor een vrijblijvend gesprek over uw bouwkundige uitdagingen.
+
+Of bel ons rechtstreeks op [026 311 5990](/contact) voor snelle antwoorden op uw vragen.

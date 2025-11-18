@@ -1,5 +1,6 @@
 <template>
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+  <NuxtLayout>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
       <!-- Contact Information -->
       <div>
@@ -166,7 +167,8 @@
         </Card>
       </div>
     </div>
-  </div>
+    </div>
+  </NuxtLayout>
 </template>
 
 <script setup>

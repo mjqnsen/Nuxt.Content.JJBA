@@ -1,5 +1,6 @@
 <template>
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+  <NuxtLayout>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
     <div class="mb-8">
       <h1 class="text-4xl font-bold text-foreground mb-4">Laatste Nieuws</h1>
       <p class="text-lg text-muted-foreground">Blijf op de hoogte van onze laatste projecten, prestaties en inzichten uit de sector</p>
@@ -55,7 +56,8 @@
         />
       </div>
     </div>
-  </div>
+    </div>
+  </NuxtLayout>
 </template>
 
 <script setup>

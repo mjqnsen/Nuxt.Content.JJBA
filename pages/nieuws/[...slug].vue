@@ -1,5 +1,6 @@
 <template>
-  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+  <NuxtLayout>
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
     <ContentDoc>
       <template #default="{ doc }">
         <!-- Article Header -->
@@ -82,7 +83,8 @@
         </div>
       </template>
     </ContentDoc>
-  </div>
+    </div>
+  </NuxtLayout>
 </template>
 
 <script setup>

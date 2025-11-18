@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  compatibilityDate: '2025-11-18',
   devtools: { enabled: true },
   
   // Static site generation configuration
@@ -41,7 +42,7 @@ export default defineNuxtConfig({
   primevue: {
     options: {
       theme: {
-        preset: '~/assets/presets/zenith.js',
+        preset: 'aura',
         options: {
           prefix: 'p',
           darkModeSelector: 'class',
