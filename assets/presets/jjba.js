@@ -1,5 +1,5 @@
-import { definePreset } from '@primevue/themes'
-import Aura from '@primevue/themes/aura'
+import { definePreset } from '@primeuix/themes'
+import Aura from '@primeuix/themes/aura'
 
 const JanJansenPreset = definePreset(Aura, {
   semantic: {
@@ -89,4 +89,11 @@ const JanJansenPreset = definePreset(Aura, {
   }
 })
 
-export default JanJansenPreset
+export default {
+  preset: JanJansenPreset,
+  options: {
+    prefix: 'p',
+    darkModeSelector: 'class',
+    cssLayer: false
+  }
+}

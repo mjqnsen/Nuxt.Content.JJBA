@@ -40,16 +40,7 @@ export default defineNuxtConfig({
   },
   
   primevue: {
-    options: {
-      theme: {
-        preset: 'aura',
-        options: {
-          prefix: 'p',
-          darkModeSelector: 'class',
-          cssLayer: false
-        }
-      }
-    },
+    importTheme: { from: '~/assets/presets/jjba.js' },
     components: {
       include: '*'
     },
