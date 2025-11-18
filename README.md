@@ -1,169 +1,191 @@
-# Zenith Architectuur - Nuxt Content Website
+# Jan Jansen bouwkundig Adviseurs - Architecture Marketing Website
 
-Een moderne architectuur marketing website gebouwd met Nuxt 3 en Nuxt Content in het Nederlands.
+A modern, responsive architecture marketing website built with Nuxt 3, featuring a complete Dutch design and content management system.
 
-## Functies
+![Architecture Website](public/JJBAlogo.png)
 
-- **Homepage**: Hero sectie met diensten overzicht en uitgelichte projecten
-- **Over Ons Pagina**: Bedrijfsinformatie, teamprofielen en onderscheidingen
-- **Nieuws Sectie**: Blog-stijl nieuwsartikelen met thumbnails en gedetailleerde weergaves
-- **Contact Pagina**: Contactinformatie en bedrijfsdetails
-- **Responsive Design**: Mobile-first ontwerp met Tailwind CSS
+## 🏗️ About
 
-## Nederlandse Routes
+This is a professional marketing website for **Jan Jansen bouwkundig Adviseurs**, a Dutch architecture firm. The site showcases their services, projects, and company information in a modern, responsive design with a custom orange color theme.
 
-De website gebruikt Nederlandse route namen:
-- `/` - Homepage
-- `/over-ons` - Over Ons (voorheen `/about`)
-- `/nieuws` - Nieuws (voorheen `/news`) 
-- `/nieuws/[slug]` - Individuele nieuwsartikelen
-- `/contact` - Contact
+## ✨ Features
 
-## Automatische Redirects
+### 🎨 Design & UI
+- **Custom Orange Theme**: Professional orange color palette (`rgb(236, 88, 39)`)
+- **Dark Mode**: Modern dark theme with proper contrast
+- **Responsive Design**: Mobile-first approach with drawer navigation
+- **PrimeVue Components**: Professional UI components with custom theming
+- **Tailwind CSS**: Utility-first styling with custom CSS variables
 
-Oude Engelse routes worden automatisch doorverwezen naar de nieuwe Nederlandse routes via middleware.
+### 🌐 Content & Language
+- **Complete Dutch Localization**: All content in Dutch (nl-NL)
+- **File-based CMS**: Powered by Nuxt Content for easy content management
+- **SEO Optimized**: Proper meta tags and structured content
+- **Image Fallback System**: Automatic placeholder handling
 
-## News Articles Structure
+### 📱 User Experience
+- **Mobile Drawer**: Professional mobile navigation with PrimeVue Drawer
+- **Smooth Animations**: CSS transitions and hover effects
+- **Interactive Elements**: Button hover states and visual feedback
+## 🛠️ Technology Stack
 
-Each news article includes:
-- **Title**: Article headline
-- **Description**: Brief summary for listings
-- **Date**: Publication date
-- **Thumbnail**: Image for news overview page
-- **Featured Image**: Main article image
-- **Content**: Full article content in Markdown
-- **Gallery**: Optional additional images with captions
+- **[Nuxt 3](https://nuxt.com/)** - Vue.js framework
+- **[Nuxt Content](https://content.nuxtjs.org/)** - File-based CMS
+- **[PrimeVue 4](https://primevue.org/)** - UI component library
+- **[Tailwind CSS](https://tailwindcss.com/)** - Utility-first CSS framework
+- **[PrimeIcons](https://primevue.org/icons)** - Icon library
+- **TypeScript** - Type safety
 
-## Getting Started
+## 📄 Pages
 
-1. Install dependencies:
+### 🏠 Homepage (`/`)
+- Hero section with company introduction
+- Services overview with icons
+- Recent projects showcase
+- Latest news integration
+- Call-to-action sections
+
+### 👥 About Us (`/over-ons`)
+- Company history and mission
+- Team information
+- Values and approach
+- Professional background
+
+### 📰 News (`/nieuws`)
+- Dynamic news listing
+- Individual article pages
+- Date and metadata display
+- Content filtering
+
+### 📞 Contact (`/contact`)
+- Contact form
+- Office information
+- Business hours
+- Location details
+
+## 🎨 Color Scheme
+
+```css
+/* Primary Colors */
+--primary: rgb(236, 88, 39)    /* Accent Orange */
+--secondary: rgb(189, 120, 82) /* Secondary Orange */
+--dark: rgb(50, 50, 49)        /* Dark Gray */
+
+/* Background Colors (Dark Mode) */
+--background: hsl(0, 0%, 8%)   /* Very Dark */
+--card: hsl(0, 0%, 12%)        /* Dark Cards */
+--muted: hsl(0, 0%, 15%)       /* Muted Areas */
+```
+
+## 🚀 Quick Start
+
+### Prerequisites
+- Node.js (v18 or higher)
+- npm or yarn
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/mjqnsen/Nuxt.Content.JJBA.git
+   cd Nuxt.Content.JJBA
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open in browser**
+   ```
+   http://localhost:3000
+   ```
+
+## 📦 Available Scripts
+
 ```bash
-npm install
+npm run dev          # Start development server
+npm run build        # Build for production
+npm run generate     # Generate static site
+npm run preview      # Preview production build
 ```
 
-2. Start the development server:
-```bash
-npm run dev
-```
-
-3. Build for production:
-```bash
-npm run build
-```
-
-## Project Structure
+## 📁 Project Structure
 
 ```
-├── content/
-│   ├── about.md
-│   ├── contact.md
-│   ├── index.md
-│   └── news/
-│       ├── sustainability-award-2024.md
-│       ├── riverside-community-groundbreaking.md
-│       └── team-expansion-september-2024.md
+├── assets/
+│   ├── css/main.css           # Global styles and CSS variables
+│   └── presets/zenith.js      # Custom PrimeVue theme preset
+├── components/
+│   └── AppImage.vue           # Reusable image component
+├── composables/
+│   └── useImageFallback.js    # Image fallback utility
+├── content/                   # Markdown content files
+│   ├── index.md              # Homepage content
+│   ├── over-ons.md           # About page content
+│   ├── contact.md            # Contact page content
+│   └── nieuws/               # News articles
 ├── layouts/
-│   └── default.vue
-├── pages/
-│   ├── index.vue
-│   ├── about.vue
-│   ├── contact.vue
-│   └── news/
-│       ├── index.vue
-│       └── [...slug].vue
-├── public/
-│   └── images/
-│       └── news/
-└── assets/
-    └── css/
-        └── main.css
+│   └── default.vue           # Main layout with navigation
+├── pages/                    # Vue.js pages
+├── public/                   # Static assets
+│   ├── JJBAlogo.png         # Company logo
+│   └── JJBAIcon.png         # Favicon
+└── nuxt.config.ts           # Nuxt configuration
 ```
 
-## Adding New Content
+## 🎯 Key Features Implementation
 
-### News Articles
+### Custom PrimeVue Theme
+The site uses a custom PrimeVue theme preset with orange branding:
+- Custom color palette integration
+- Dark mode support
+- Component-specific styling
 
-Create new `.md` files in the `content/news/` directory with the following frontmatter:
+### Mobile Navigation
+Professional mobile drawer navigation:
+- Full-height drawer with close button
+- Company logo integration
+- Smooth animations and transitions
 
-```yaml
----
-title: "Article Title"
-description: "Brief description for listings"
-date: "YYYY-MM-DD"
-thumbnail: "/images/news/thumbnail.jpg"
-image: "/images/news/featured-image.jpg"
-gallery:
-  - src: "/images/news/gallery-1.jpg"
-    alt: "Alt text"
-    caption: "Image caption"
----
-```
+### Content Management
+Powered by Nuxt Content for easy content updates:
+- Markdown-based content
+- Dynamic routing
+- Meta information handling
 
-### Other Pages
+## 🔧 Configuration
 
-Edit the corresponding `.md` files in the `content/` directory to update page content.
+### Theme Customization
+Edit `assets/presets/zenith.js` to modify the PrimeVue theme colors and styling.
 
-## Technologies Used
+### Content Updates
+Add or modify content files in the `content/` directory using Markdown format.
 
-- **Nuxt 3**: Vue.js framework
-- **Nuxt Content**: File-based CMS
-- **PrimeVue 4**: Vue.js UI component library
-- **Tailwind CSS**: Utility-first CSS framework
-- **Markdown**: Content authoring
+### Styling Changes
+Update CSS variables in `assets/css/main.css` for global style modifications.
 
-## UI Components
+## 🌟 Company Information
 
-The site uses PrimeVue 4 components integrated with Tailwind CSS:
-- **Navigation**: Menubar and Sidebar for responsive navigation
-- **Cards**: For service listings, project showcases, and news articles
-- **Buttons**: Various styles and states throughout the site
-- **Icons**: PrimeIcons for consistent iconography
-- **Layout**: Responsive grid system with PrimeVue containers
-- **Images**: Custom AppImage component with automatic fallback handling
+**Jan Jansen bouwkundig Adviseurs**
+- **Address**: Het Vergun 26b, 6931 KD Westervoort
+- **Phone**: +31 (0)26 319 4411
+- **Email**: info@janjansen.net
+- **Hours**: Ma-Vr: 9:00-18:00 | Za: 10:00-16:00
 
-## Image Fallback System
+## 📝 License
 
-The site includes a robust image fallback system:
+This project is proprietary software for Jan Jansen bouwkundig Adviseurs.
 
-### Default Placeholder
-- **Location**: `/public/images/news/Placeholder.svg`
-- **Usage**: Automatic fallback for all news articles and images
-- **Customizable**: Can specify custom fallback images per component
+## 🤝 Contributing
 
-### Composable: `useImageFallback()`
-```javascript
-const { getImageSrc, handleImageError } = useImageFallback()
-
-// Get image with fallback
-const imageSrc = getImageSrc(originalSrc, customFallback)
-
-// Handle image errors
-<img @error="handleImageError" />
-```
-
-### AppImage Component
-```vue
-<AppImage 
-  :src="article.thumbnail" 
-  :alt="article.title"
-  fallback="/custom/fallback.jpg"
-  class="w-full h-48 object-cover"
-/>
-```
-
-### Features
-- ✅ **Automatic Fallback**: Images automatically fall back to placeholder on error
-- ✅ **Custom Fallbacks**: Specify different fallback images per use case
-- ✅ **Error Handling**: Graceful handling of broken or missing images
-- ✅ **Performance**: Efficient loading with proper error states
-
-## Customization
-
-- Update company information in `layouts/default.vue`
-- Modify styling in `assets/css/main.css` and component templates
-- Add new pages by creating files in the `pages/` directory
-- Update content by editing Markdown files in the `content/` directory
+This is a private project for Jan Jansen bouwkundig Adviseurs. For any changes or updates, please contact the development team.
 
 ---
 
-Built with ❤️ by Zenith Architecture
+*Built with ❤️ for modern architecture marketing*
