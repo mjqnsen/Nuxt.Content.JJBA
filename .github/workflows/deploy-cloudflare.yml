@@ -36,7 +36,7 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: jan-jansen-architectuur
+          projectName: janjansen
           directory: .output/public
           # Optional: Custom domain
           # gitHubToken: ${{ secrets.GITHUB_TOKEN }}
