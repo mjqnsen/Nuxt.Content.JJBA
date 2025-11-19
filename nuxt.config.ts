@@ -3,14 +3,6 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-11-18',
   devtools: { enabled: true },
   
-  // Static site generation configuration
-  nitro: {
-    preset: 'cloudflare-pages',
-    prerender: {
-      routes: ['/sitemap.xml', '/robots.txt']
-    }
-  },
-  
   // Generate static site
   ssr: true,
   
