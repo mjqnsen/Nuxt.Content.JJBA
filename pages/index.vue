@@ -227,9 +227,10 @@ definePageMeta({
 })
 
 // Fetch recent news articles
-const { data: recentNews, pending } = await useAsyncData('recent-nieuws', () => 
-  queryContent('nieuws').sort({ date: -1 }).limit(3).find()
-)
+const { data: recentNews, pending } = await useAsyncData('recent-nieuws', async () => {
+  const allNews = await queryCollection('nieuws').sort({ date: -1 }).all()
+  return allNews.slice(0, 3)
+})
 
 // Image fallback composable
 const { getImageSrc, handleImageError } = useImageFallback()

@@ -3,6 +3,11 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-11-18',
   devtools: { enabled: true },
   
+  // Configure for Cloudflare Pages
+  nitro: {
+    preset: 'cloudflare_pages'
+  },
+  
   // Generate static site
   ssr: true,
   

@@ -16,10 +16,11 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "dependencies": {
-    "@nuxt/content": "^2.9.0",
+    "@nuxt/content": "^3.8.2",
     "@primevue/nuxt-module": "^4.0.7",
     "@primevue/themes": "^4.0.7",
     "primeicons": "^7.0.0",
-    "primevue": "^4.0.7"
+    "primevue": "^4.0.7",
+    "zod": "^4.1.12"
   }
 }

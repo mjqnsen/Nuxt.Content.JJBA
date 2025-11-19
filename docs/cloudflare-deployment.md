@@ -2,6 +2,25 @@
 
 This document explains how to set up automatic deployment to Cloudflare Pages using GitHub Actions.
 
+## Why D1 Database is Required
+
+**Nuxt Content v3** requires a Cloudflare D1 database for the following reasons:
+
+### Content Indexing and Querying
+- **v3 Architecture**: Uses collection-based approach with runtime content querying
+- **Database Storage**: Markdown content metadata, indexes, and structure are stored in D1
+- **Efficient Queries**: Operations like `queryCollection('nieuws').sort({ date: -1 }).all()` become SQL database queries
+
+### Serverless Environment Limitations  
+- **Read-only File System**: Cloudflare Pages has a read-only file system at runtime
+- **Content Processing**: Cannot parse markdown files on every request for performance
+- **Persistent Storage**: D1 provides persistent storage for content indexes
+
+### Schema Validation
+- **Content Schemas**: The `content.config.ts` file defines content structure using Zod schemas
+- **Runtime Validation**: Content queries validate against database schema at runtime
+- **Type Safety**: Ensures content structure consistency across the application
+
 ## Prerequisites
 
 1. **Cloudflare Account**: You need a Cloudflare account
@@ -36,13 +55,33 @@ This document explains how to set up automatic deployment to Cloudflare Pages us
    - `CLOUDFLARE_API_TOKEN`: Your API token from step 1
    - `CLOUDFLARE_ACCOUNT_ID`: Your account ID from step 2
 
-### 4. Create Cloudflare Pages Project
+### 4. Create Cloudflare D1 Database
+
+**⚠️ IMPORTANT**: Nuxt Content v3 requires a D1 database for content indexing and querying.
+
+1. Go to **Cloudflare Dashboard** → **D1**
+2. Click **Create database**
+3. Set database name: `jjba-content-db`
+4. Click **Create**
+5. Note the **Database ID** (you'll need this)
+
+### 5. Create Cloudflare Pages Project
 
 1. Go to **Cloudflare Dashboard** → **Pages**
 2. Click **Create a project**
 3. Choose **Direct Upload** (not Git integration, since we're using GitHub Actions)
 4. Set project name: `jan-jansen-architectuur`
 5. Complete the setup
+
+### 6. Connect D1 Database to Pages Project
+
+1. Go to your **Pages project** → **Settings** → **Functions**
+2. Scroll to **D1 database bindings**
+3. Click **Add binding**
+4. Set:
+   - **Variable name**: `DB`
+   - **D1 database**: Select `jjba-content-db`
+5. Click **Save**
 
 ## Deployment Configuration
 

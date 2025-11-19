@@ -61,7 +61,7 @@
 </template>
 
 <script setup>
-const { data } = await useAsyncData('nieuws', () => queryContent('nieuws').sort({ date: -1 }).find())
+const { data } = await useAsyncData('nieuws', () => queryCollection('nieuws').sort({ date: -1 }).all())
 
 // Image fallback composable
 const { getImageSrc, handleImageError } = useImageFallback()
