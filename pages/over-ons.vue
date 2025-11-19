@@ -1,13 +1,12 @@
 <template>
   <NuxtLayout>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <ContentDoc>
-        <template #default="{ doc }">
-          <!-- Hero Section -->
-          <div class="text-center mb-12">
-            <h1 class="text-4xl md:text-5xl font-bold text-foreground mb-4">
-              {{ doc.title }}
-            </h1>
+      <div v-if="doc">
+        <!-- Hero Section -->
+        <div class="text-center mb-12">
+          <h1 class="text-4xl md:text-5xl font-bold text-foreground mb-4">
+            Over Ons - Jan Jansen bouwkundig Adviseurs
+          </h1>
             <div class="text-xl md:text-2xl text-primary font-semibold mb-8">
               Tekenwerk, Rekenwerk, Goed Bekeken Werk
             </div>
@@ -153,13 +152,17 @@
               </div>
             </template>
           </Card>
-        </template>
-      </ContentDoc>
+      </div>
     </div>
   </NuxtLayout>
 </template>
 
 <script setup>
+// Fetch the about content using the new v3 API
+const { data: doc } = await useAsyncData('over-ons', () => 
+  queryCollection('content').path('/over-ons').first()
+)
+
 useHead({
   title: 'Over Ons - Jan Jansen bouwkundig Adviseurs',
   meta: [

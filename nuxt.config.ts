@@ -1,15 +1,17 @@
+import Aura from '@primeuix/themes/aura';
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2025-11-18',
   devtools: { enabled: true },
   
-  // Configure for Cloudflare Pages
+  // Static Site Generation
   nitro: {
-    preset: 'cloudflare_pages'
+    prerender: {
+      routes: ['/'],
+      crawlLinks: true
+    }
   },
-  
-  // Generate static site
-  ssr: true,
   
   modules: [
     '@nuxt/content', 
@@ -37,7 +39,11 @@ export default defineNuxtConfig({
   },
   
   primevue: {
-    importTheme: { from: '~/assets/presets/jjba.js' },
+    options: {
+      theme: {
+        preset: Aura
+      }
+    },
     components: {
       include: '*'
     },
@@ -45,13 +51,13 @@ export default defineNuxtConfig({
       include: ['Tooltip', 'Ripple']
     }
   },
+  
   content: {
     // https://content.nuxtjs.org/api/configuration
-    documentDriven: true,
     markdown: {
       anchorLinks: false
     }
   },
   
-  css: ['~/assets/css/main.css', 'primeicons/primeicons.css']
+  css: ['primeicons/primeicons.css']
 })

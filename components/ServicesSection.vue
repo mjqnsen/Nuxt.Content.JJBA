@@ -1,7 +1,14 @@
 <template>
-  <div class="mb-12">
-    <h2 class="text-3xl font-bold text-center text-foreground mb-8">Onze Diensten</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+  <section :class="sectionClasses">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-foreground mb-4">{{ title }}</h2>
+        <p class="text-lg text-muted-foreground">
+          {{ subtitle }}
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
       <Card class="text-center hover:shadow-lg transition-shadow">
         <template #content>
           <div class="p-6">
@@ -48,12 +55,39 @@
             <p class="text-muted-foreground text-sm">Officiële EP-certificering door ISSO gecertificeerde adviseurs</p>
           </div>
         </template>
-      </Card>
+        </Card>
+      </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script setup>
-// Component for displaying the services section
-// Used on homepage and about us page
+// Props
+const props = defineProps({
+  title: {
+    type: String,
+    default: 'Onze Diensten'
+  },
+  subtitle: {
+    type: String,
+    default: 'Professionele bouwkundige dienstverlening voor al uw projecten'
+  },
+  backgroundColor: {
+    type: String,
+    default: 'py-16'
+  },
+  includePadding: {
+    type: Boolean,
+    default: true
+  }
+})
+
+// Computed
+const sectionClasses = computed(() => {
+  const classes = [props.backgroundColor]
+  if (!props.includePadding) {
+    classes.push('py-0')
+  }
+  return classes.join(' ')
+})
 </script>

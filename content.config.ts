@@ -3,9 +3,16 @@ import { z } from 'zod'
 
 export default defineContentConfig({
   collections: {
+    content: defineCollection({
+      type: 'page',
+      source: {
+        include: '**/*.md',
+        exclude: ['nieuws/**']
+      }
+    }),
     nieuws: defineCollection({
       type: 'page',
-      source: 'nieuws/*.md',
+      source: 'nieuws/**',
       schema: z.object({
         title: z.string(),
         description: z.string(),
@@ -17,15 +24,6 @@ export default defineContentConfig({
           alt: z.string(),
           caption: z.string().optional()
         })).optional()
-      })
-    }),
-    content: defineCollection({
-      type: 'page',
-      source: '*.md',
-      schema: z.object({
-        title: z.string().optional(),
-        description: z.string().optional(),
-        navigation: z.boolean().default(true)
       })
     })
   }

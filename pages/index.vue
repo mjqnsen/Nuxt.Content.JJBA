@@ -2,7 +2,7 @@
   <NuxtLayout>
     <div>
       <!-- Hero Section -->
-      <section class="relative bg-gradient-to-br from-orange-600 to-orange-500 text-white overflow-hidden" style="background: linear-gradient(to bottom right, rgb(236, 88, 39), rgb(189, 120, 82))">
+       <section class="relative bg-gradient-to-br from-orange-600 to-orange-500 text-white overflow-hidden" style="background: linear-gradient(to bottom right, rgb(236, 88, 39), rgb(189, 120, 82))">
       <div class="absolute inset-0 bg-black/30"></div>
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
         <div class="text-center">
@@ -36,85 +36,9 @@
 
 
     <!-- Services Section -->
-    <section class="py-16 bg-background">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <ServicesSection />
-      </div>
-    </section>
-
-    <!-- Recent Projects Section -->
-    <section class="py-16 bg-muted/50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-foreground mb-4">Uitgelichte Projecten</h2>
-          <p class="text-lg text-muted-foreground">
-            Een blik op onze recente architecturale prestaties
-          </p>
-        </div>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <Card class="overflow-hidden hover:shadow-xl transition-all duration-300">
-            <template #header>
-              <div class="h-48 bg-gradient-to-br from-muted to-muted-foreground/20"></div>
-            </template>
-            <template #content>
-              <div class="p-6">
-                <h3 class="text-xl font-semibold mb-3 text-foreground">Modern Wooncomplex</h3>
-                <p class="text-muted-foreground mb-4">Duurzame woonruimtes met innovatieve ontwerpelementen</p>
-                <Button 
-                  label="Bekijk Project" 
-                  severity="secondary" 
-                  text
-                  icon="pi pi-arrow-right"
-                  iconPos="right"
-                  size="small"
-                />
-              </div>
-            </template>
-          </Card>
-          
-          <Card class="overflow-hidden hover:shadow-xl transition-all duration-300">
-            <template #header>
-              <div class="h-48 bg-gradient-to-br from-muted to-muted-foreground/20"></div>
-            </template>
-            <template #content>
-              <div class="p-6">
-                <h3 class="text-xl font-semibold mb-3 text-foreground">Bedrijfshoofkantoor</h3>
-                <p class="text-muted-foreground mb-4">Een iconisch gebouw dat de stadshorizon definieert</p>
-                <Button 
-                  label="Bekijk Project" 
-                  severity="secondary" 
-                  text
-                  icon="pi pi-arrow-right"
-                  iconPos="right"
-                  size="small"
-                />
-              </div>
-            </template>
-          </Card>
-          
-          <Card class="overflow-hidden hover:shadow-xl transition-all duration-300">
-            <template #header>
-              <div class="h-48 bg-gradient-to-br from-muted to-muted-foreground/20"></div>
-            </template>
-            <template #content>
-              <div class="p-6">
-                <h3 class="text-xl font-semibold mb-3 text-foreground">Cultureel Centrum</h3>
-                <p class="text-muted-foreground mb-4">Gemeenschapsruimte die mensen samenbrengt</p>
-                <Button 
-                  label="Bekijk Project" 
-                  severity="secondary" 
-                  text
-                  icon="pi pi-arrow-right"
-                  iconPos="right"
-                  size="small"
-                />
-              </div>
-            </template>
-          </Card>
-        </div>
-      </div>
-    </section>
+    <ServicesSection 
+      background-color="py-16 bg-background"
+    />
 
     <!-- Recent News Section -->
     <section class="py-16 bg-background">
@@ -138,27 +62,12 @@
           />
         </div>
         
-        <div v-if="pending" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <Card v-for="n in 3" :key="n" class="overflow-hidden">
-            <template #header>
-              <Skeleton height="12rem" />
-            </template>
-            <template #content>
-              <div class="p-6 space-y-3">
-                <Skeleton height="1rem" width="4rem" />
-                <Skeleton height="1.5rem" />
-                <Skeleton height="4rem" />
-              </div>
-            </template>
-          </Card>
-        </div>
-        
-        <div v-else-if="recentNews && recentNews.length > 0" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div v-if="recentNews && recentNews.length > 0" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <Card 
             v-for="article in recentNews" 
             :key="article._path" 
             class="overflow-hidden hover:shadow-lg transition-all duration-300 cursor-pointer group"
-            @click="$router.push(article._path.replace('/nieuws/', '/nieuws/'))"
+            @click="$router.push(article._path)"
           >
             <template #header>
               <div class="h-48 overflow-hidden">
@@ -227,10 +136,10 @@ definePageMeta({
 })
 
 // Fetch recent news articles
-const { data: recentNews, pending } = await useAsyncData('recent-nieuws', async () => {
-  const allNews = await queryCollection('nieuws').sort({ date: -1 }).all()
-  return allNews.slice(0, 3)
-})
+const recentNews = await queryCollection('nieuws')
+  .order('date', 'DESC')
+  .limit(3)
+  .all()
 
 // Image fallback composable
 const { getImageSrc, handleImageError } = useImageFallback()

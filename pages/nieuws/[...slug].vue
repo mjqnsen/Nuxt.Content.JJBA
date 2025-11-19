@@ -86,12 +86,8 @@
 </template>
 
 <script setup>
-const route = useRoute()
-const slug = Array.isArray(route.params.slug) ? route.params.slug.join('/') : route.params.slug
-
-const { data } = await useAsyncData(`nieuws-${slug}`, () => 
-  queryCollection('nieuws').path(`/nieuws/${slug}`).first()
-)
+const slug = useRoute().params.slug
+const data = await queryCollection('nieuws').path(`/nieuws/${slug}`).first()
 
 // Image fallback composable
 const { getImageSrc, handleImageError } = useImageFallback()
@@ -107,11 +103,11 @@ const formatDate = (dateString) => {
 }
 
 useHead({
-  title: () => data.value ? `${data.value.title} - Jan Jansen bouwkundig Adviseurs` : 'Nieuwsartikel - Jan Jansen bouwkundig Adviseurs',
+  title: data ? `${data.title} - Jan Jansen bouwkundig Adviseurs` : 'Nieuwsartikel - Jan Jansen bouwkundig Adviseurs',
   meta: [
     {
       name: 'description',
-      content: () => data.value?.description || 'Nieuwsartikel van Jan Jansen bouwkundig Adviseurs'
+      content: data?.description || 'Nieuwsartikel van Jan Jansen bouwkundig Adviseurs'
     }
   ]
 })

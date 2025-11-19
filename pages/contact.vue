@@ -4,10 +4,9 @@
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
       <!-- Contact Information -->
       <div>
-        <ContentDoc>
-          <template #default="{ doc }">
-            <div class="prose prose-lg max-w-none">
-              <h1 class="text-4xl font-bold text-foreground mb-6">{{ doc.title }}</h1>
+        <div v-if="doc">
+          <div class="prose prose-lg max-w-none">
+            <h1 class="text-4xl font-bold text-foreground mb-6">Contact Jan Jansen bouwkundig Adviseurs</h1>
               
               <div class="bg-muted/50 p-6 rounded-lg mb-8">
                 <h2 class="text-2xl font-semibold text-foreground mb-4">Neem contact op</h2>
@@ -108,8 +107,7 @@
                 </div>
               </div>
             </div>
-          </template>
-        </ContentDoc>
+        </div>
       </div>
 
       <!-- Office Building Image -->
@@ -172,6 +170,11 @@
 </template>
 
 <script setup>
+// Fetch the contact content using the new v3 API
+const { data: doc } = await useAsyncData('contact', () => 
+  queryCollection('content').path('/contact').first()
+)
+
 useHead({
   title: 'Contact - Jan Jansen bouwkundig Adviseurs',
   meta: [

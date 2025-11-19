@@ -7,7 +7,7 @@
     </div>
     
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <Card v-for="article in data" :key="article._path" class="overflow-hidden hover:shadow-xl transition-all duration-300 cursor-pointer" @click="$router.push(article._path.replace('/nieuws/', '/nieuws/'))">
+      <Card v-for="article in data" :key="article.path" class="overflow-hidden hover:shadow-xl transition-all duration-300 cursor-pointer" @click="$router.push(article.path.replace('/nieuws/', '/nieuws/'))">
         <template #header>
           <div class="h-48 overflow-hidden">
             <img 
@@ -61,7 +61,7 @@
 </template>
 
 <script setup>
-const { data } = await useAsyncData('nieuws', () => queryCollection('nieuws').sort({ date: -1 }).all())
+const data = await queryCollection('nieuws').order('date', 'DESC').all()
 
 // Image fallback composable
 const { getImageSrc, handleImageError } = useImageFallback()
