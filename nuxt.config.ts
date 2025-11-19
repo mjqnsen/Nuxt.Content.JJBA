@@ -1,4 +1,119 @@
 import Aura from '@primeuix/themes/aura';
+import { definePreset } from '@primeuix/themes';
+
+// Custom PrimeVue 4 theme preset with orange primary colors
+const MyPreset = definePreset(Aura, {
+  primitive: {
+    borderRadius: {
+      none: '0',
+      xs: '2px',
+      sm: '4px',
+      md: '6px',
+      lg: '8px',
+      xl: '12px'
+    },
+    orange: {
+      50: '#fff7ed',
+      100: '#ffedd5',
+      200: '#fed7aa',
+      300: '#fdba74',
+      400: '#fb923c',
+      500: '#f97316',
+      600: '#ea580c',
+      700: '#c2410c',
+      800: '#9a3412',
+      900: '#7c2d12',
+      950: '#431407'
+    },
+    zinc: {
+      50: '#fafafa',
+      100: '#f4f4f5',
+      200: '#e4e4e7',
+      300: '#d4d4d8',
+      400: '#a1a1aa',
+      500: '#71717a',
+      600: '#52525b',
+      700: '#3f3f46',
+      800: '#27272a',
+      900: '#18181b',
+      950: '#09090b'
+    },
+    slate: {
+      50: '#f8fafc',
+      100: '#f1f5f9',
+      200: '#e2e8f0',
+      300: '#cbd5e1',
+      400: '#94a3b8',
+      500: '#64748b',
+      600: '#475569',
+      700: '#334155',
+      800: '#1e293b',
+      900: '#0f172a',
+      950: '#020617'
+    }
+  },
+  semantic: {
+    primary: {
+      50: '{orange.50}',
+      100: '{orange.100}',
+      200: '{orange.200}',
+      300: '{orange.300}',
+      400: '{orange.400}',
+      500: '{orange.500}',
+      600: '{orange.600}',
+      700: '{orange.700}',
+      800: '{orange.800}',
+      900: '{orange.900}',
+      950: '{orange.950}'
+    },
+    colorScheme: {
+      light: {
+        primary: {
+          color: '{orange.600}',
+          contrastColor: '#ffffff',
+          hoverColor: '{orange.700}',
+          activeColor: '{orange.800}'
+        },
+        surface: {
+          0: '#ffffff',
+          50: '{zinc.50}',
+          100: '{zinc.100}',
+          200: '{zinc.200}',
+          300: '{zinc.300}',
+          400: '{zinc.400}',
+          500: '{zinc.500}',
+          600: '{zinc.600}',
+          700: '{zinc.700}',
+          800: '{zinc.800}',
+          900: '{zinc.900}',
+          950: '{zinc.950}'
+        }
+      },
+      dark: {
+        primary: {
+          color: '{orange.500}',
+          contrastColor: '{zinc.900}',
+          hoverColor: '{orange.400}',
+          activeColor: '{orange.300}'
+        },
+        surface: {
+          0: '#ffffff',
+          50: '{slate.50}',
+          100: '{slate.100}',
+          200: '{slate.200}',
+          300: '{slate.300}',
+          400: '{slate.400}',
+          500: '{slate.500}',
+          600: '{slate.600}',
+          700: '{slate.700}',
+          800: '{slate.800}',
+          900: '{slate.900}',
+          950: '{slate.950}'
+        }
+      }
+    }
+  }
+});
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -41,7 +156,7 @@ export default defineNuxtConfig({
   primevue: {
     options: {
       theme: {
-        preset: Aura,
+        preset: MyPreset,
         options: {
           cssLayer: {
             name: 'primevue',

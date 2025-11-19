@@ -14,16 +14,16 @@
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-delay-2">
             <Button 
-              as="NuxtLink" 
-              to="/over-ons"
+              as="a" 
+              href="/over-ons"
               severity="warn"
               label="Meer Over Ons"
               size="large"
               class="px-8 py-3"
             />
             <Button 
-              as="NuxtLink" 
-              to="/contact" 
+              as="a" 
+              href="/contact" 
               label="Start Uw Project"
               severity="secondary"
               size="large"
@@ -51,8 +51,8 @@
             </p>
           </div>
           <Button 
-            as="NuxtLink" 
-            to="/nieuws" 
+            as="a" 
+            href="/nieuws" 
             label="Bekijk Alle Nieuws"
             severity="secondary"
             outlined
@@ -114,8 +114,8 @@
         <!-- Mobile View All Button -->
         <div class="text-center mt-8 sm:hidden">
           <Button 
-            as="NuxtLink" 
-            to="/nieuws" 
+            as="a" 
+            href="/nieuws" 
             label="Bekijk Alle Nieuws"
             severity="secondary"
             outlined

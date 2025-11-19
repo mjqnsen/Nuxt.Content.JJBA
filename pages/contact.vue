@@ -23,7 +23,7 @@
                 <Card class="p-6">
                   <template #content>
                     <div class="flex items-center space-x-4">
-                      <div class="w-12 h-12 rounded-full flex items-center justify-center" style="background-color: rgb(236, 88, 39)">
+                      <div class="w-12 h-12 rounded-full flex items-center justify-center bg-orange-600">
                         <i class="pi pi-phone text-white text-lg"></i>
                       </div>
                       <div>
@@ -37,7 +37,7 @@
                 <Card class="p-6">
                   <template #content>
                     <div class="flex items-center space-x-4">
-                      <div class="w-12 h-12 rounded-full flex items-center justify-center" style="background-color: rgb(236, 88, 39)">
+                      <div class="w-12 h-12 rounded-full flex items-center justify-center bg-orange-600">
                         <i class="pi pi-map-marker text-white text-lg"></i>
                       </div>
                       <div>
@@ -51,30 +51,12 @@
                 <Card class="p-6">
                   <template #content>
                     <div class="flex items-center space-x-4">
-                      <div class="w-12 h-12 rounded-full flex items-center justify-center" style="background-color: rgb(236, 88, 39)">
+                      <div class="w-12 h-12 rounded-full flex items-center justify-center bg-orange-600">
                         <i class="pi pi-envelope text-white text-lg"></i>
                       </div>
                       <div>
                         <h3 class="font-semibold text-foreground">Email</h3>
                         <a href="mailto:info@janjansen.net" class="text-primary hover:underline">info@janjansen.net</a>
-                      </div>
-                    </div>
-                  </template>
-                </Card>
-
-                <Card class="p-6">
-                  <template #content>
-                    <div class="flex items-center space-x-4">
-                      <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
-                        <i class="pi pi-clock text-white text-lg"></i>
-                      </div>
-                      <div>
-                        <h3 class="font-semibold text-foreground">Openingstijden</h3>
-                        <div class="text-muted-foreground">
-                          <p>Maandag - Vrijdag: 9:00 - 18:00</p>
-                          <p>Zaterdag: 10:00 - 16:00</p>
-                          <p>Zondag: Gesloten</p>
-                        </div>
                       </div>
                     </div>
                   </template>
@@ -174,6 +156,8 @@
 const { data: doc } = await useAsyncData('contact', () => 
   queryCollection('content').path('/contact').first()
 )
+
+console.log(doc)
 
 useHead({
   title: 'Contact - Jan Jansen bouwkundig Adviseurs',

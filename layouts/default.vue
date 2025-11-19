@@ -125,9 +125,9 @@
                 <i class="pi pi-envelope text-primary"></i>
                 <a href="mailto:info@janjansen.net" class="hover:text-primary transition-colors">info@janjansen.net</a>
               </p>
-              <p class="flex items-center gap-2 text-sm">
-                <i class="pi pi-clock text-primary"></i>
-                Ma-Vr: 9:00-18:00 | Za: 10:00-16:00
+              <p class="flex items-center gap-2">
+                <i class="pi pi-building text-primary"></i>
+                <span>BTW: NL 0012 7425 3B09</span>
               </p>
             </div>
           </div>

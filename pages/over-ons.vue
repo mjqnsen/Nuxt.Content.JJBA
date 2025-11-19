@@ -12,37 +12,38 @@
             </div>
           </div>
 
-          <!-- Main Content Grid -->
+          <!-- Team Members Section -->
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-            <!-- Company Description Card -->
+            <!-- Team Member Card - Jan Jansen -->
             <Card class="h-fit">
               <template #header>
                 <img 
-                  src="/images/about/office-building.jpg" 
-                  alt="Kantoorgebouw Westerpoort" 
+                  src="/images/about/jan-jansen.jpg" 
+                  alt="Jan Jansen" 
                   class="w-full h-64 object-cover"
                 />
               </template>
               <template #content>
                 <div class="p-6">
-                  <h2 class="text-2xl font-semibold text-foreground mb-4">Ons Bedrijf</h2>
+                  <h2 class="text-2xl font-semibold text-foreground mb-2">Jan Jansen</h2>
+                  <Badge 
+                    value="Oprichter & Bouwkundig Adviseur" 
+                    severity="info" 
+                    class="mb-4"
+                  />
                   <p class="text-muted-foreground leading-relaxed mb-4">
-                    Jan Jansen houdt zich tegenwoordig niet alleen meer bezig met goed teken- en rekenwerk maar richt zich ook op de nieuwe markt van het duurzaamheidsvraagstuk.
+                    Jan Jansen is de oprichter van Jan Jansen bouwkundig Adviseurs. Met jarenlange ervaring in de bouwsector levert hij kwalitatief hoogstaand teken- en rekenwerk voor diverse bouwprojecten.
                   </p>
-                  <Chip 
-                    label="Duurzaamheid" 
-                    icon="pi pi-sun" 
-                    class="mr-2"
-                  />
-                  <Chip 
-                    label="Innovatie" 
-                    icon="pi pi-lightbulb"
-                  />
+                  <div class="flex flex-wrap gap-2">
+                    <Tag value="Tekenwerk" />
+                    <Tag value="Rekenwerk" />
+                    <Tag value="Projectbegeleiding" />
+                  </div>
                 </div>
               </template>
             </Card>
 
-            <!-- Team Member Card -->
+            <!-- Team Member Card - Ferdinand -->
             <Card class="h-fit">
               <template #header>
                 <img 
@@ -66,6 +67,66 @@
                     <Tag value="Woningbouw" />
                     <Tag value="Utiliteitsbouw" />
                     <Tag value="EP Labels" />
+                  </div>
+                </div>
+              </template>
+            </Card>
+          </div>
+
+          <!-- Main Content Grid -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+            <!-- Company Description Card -->
+            <Card class="h-fit">
+              <template #header>
+                <img 
+                  src="/images/about/officebuilding.jpg" 
+                  alt="Kantoorgebouw Westerpoort" 
+                  class="w-full h-64 object-cover"
+                />
+              </template>
+              <template #content>
+                <div class="p-6">
+                  <h2 class="text-2xl font-semibold text-foreground mb-4">Ons Bedrijf</h2>
+                  <p class="text-muted-foreground leading-relaxed mb-4">
+                    Jan Jansen bouwkundig Adviseurs is een gespecialiseerd bureau dat zich richt op kwalitatief hoogstaand teken- en rekenwerk. Wij combineren vakmanschap met innovatieve oplossingen en richten ons steeds meer op de groeiende markt van duurzaamheidsvraagstukken in de bouw.
+                  </p>
+                  <Chip 
+                    label="Duurzaamheid" 
+                    icon="pi pi-sun" 
+                    class="mr-2"
+                  />
+                  <Chip 
+                    label="Innovatie" 
+                    icon="pi pi-lightbulb"
+                  />
+                </div>
+              </template>
+            </Card>
+
+            <!-- Additional Team Info Card -->
+            <Card class="h-fit">
+              <template #content>
+                <div class="p-6 text-center">
+                  <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="pi pi-users text-primary text-2xl"></i>
+                  </div>
+                  <h3 class="text-xl font-semibold text-foreground mb-3">Ons Team</h3>
+                  <p class="text-muted-foreground leading-relaxed mb-4">
+                    Samen vormen wij een ervaren team dat zich inzet voor kwaliteit en duurzaamheid in elk project. Van concept tot realisatie staan wij voor u klaar.
+                  </p>
+                  <div class="space-y-2 text-sm text-muted-foreground">
+                    <div class="flex items-center justify-center gap-2">
+                      <i class="pi pi-check-circle text-primary"></i>
+                      <span>Ervaren professionals</span>
+                    </div>
+                    <div class="flex items-center justify-center gap-2">
+                      <i class="pi pi-check-circle text-primary"></i>
+                      <span>Persoonlijke benadering</span>
+                    </div>
+                    <div class="flex items-center justify-center gap-2">
+                      <i class="pi pi-check-circle text-primary"></i>
+                      <span>Kwaliteitsgarantie</span>
+                    </div>
                   </div>
                 </div>
               </template>
@@ -104,13 +165,6 @@
                       <i class="pi pi-building text-primary"></i>
                       <span>Modern kantoorgebouw</span>
                     </div>
-                  </div>
-                  <div>
-                    <img 
-                      src="/images/about/team-work.jpg" 
-                      alt="Team aan het werk" 
-                      class="w-full h-48 object-cover rounded-lg"
-                    />
                   </div>
                 </div>
               </div>
