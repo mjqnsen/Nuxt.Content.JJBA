@@ -28,8 +28,6 @@ jobs:
         
       - name: Build static site
         run: npm run generate
-        env:
-          NITRO_PRESET: cloudflare-pages
           
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/pages-action@v1
