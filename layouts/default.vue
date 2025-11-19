@@ -154,6 +154,10 @@ const menuItems = ref([
     route: '/over-ons'
   },
   {
+    label: 'Energielabels',
+    route: '/energielabels'
+  },
+  {
     label: 'Nieuws',
     route: '/nieuws'
   },

@@ -98,7 +98,7 @@
           <template #header>
             <div class="relative">
               <AppImage 
-                src="/images/office-building.jpg"
+                src="/images/about/officebuilding.jpg"
                 alt="Zenith Architectuur kantoorgebouw"
                 class="w-full h-80 lg:h-96 object-cover"
                 fallback="/images/news/Placeholder.svg"
