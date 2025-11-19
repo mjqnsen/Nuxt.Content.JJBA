@@ -15,7 +15,8 @@
           <div class="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-delay-2">
             <Button 
               as="NuxtLink" 
-              to="/over-ons" 
+              to="/over-ons"
+              severity="warn"
               label="Meer Over Ons"
               size="large"
               class="px-8 py-3"
@@ -25,7 +26,6 @@
               to="/contact" 
               label="Start Uw Project"
               severity="secondary"
-              outlined
               size="large"
               class="px-8 py-3"
             />

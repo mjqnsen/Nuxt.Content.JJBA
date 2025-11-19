@@ -165,7 +165,7 @@ const menuItems = ref([
 
 useHead({
   htmlAttrs: {
-    class: 'h-full'
+    class: 'h-full dark'
   },
   bodyAttrs: {
     class: 'h-full'
