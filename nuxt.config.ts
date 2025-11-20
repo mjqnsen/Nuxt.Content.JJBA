@@ -164,7 +164,10 @@ export default defineNuxtConfig({
           },
           darkModeSelector: '.dark'
         }
-      }
+      },
+      // Global passthrough options for consistent styling
+      // pt: {
+      // }
     },
     components: {
       include: '*'

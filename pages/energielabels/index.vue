@@ -19,7 +19,7 @@
             <i class="pi pi-home text-3xl mb-4"></i>
             <h3 class="text-xl font-semibold mb-2">Woningbouw</h3>
             <p class="text-lg font-bold">Vanaf €420,-</p>
-            <p class="text-sm opacity-90">Appartementen, rijtjeshuizen, villa's</p>
+            <p class="text-sm opacity-90">Appartementen, rijtjeshuizen, vrijstaande woningen</p>
           </div>
           <div class="bg-white/10 backdrop-blur-sm p-6 rounded-lg text-center">
             <i class="pi pi-building text-3xl mb-4"></i>
@@ -159,8 +159,8 @@
             <template #header>
               <div class="bg-gradient-to-r from-primary/10 to-primary/5 p-6 text-center">
                 <i class="pi pi-home text-primary text-4xl mb-4"></i>
-                <h3 class="text-2xl font-semibold text-foreground mb-2">Villa</h3>
-                <div class="text-3xl font-bold text-primary">€550,-</div>
+                <h3 class="text-2xl font-semibold text-foreground mb-2">Vrijstaande woning</h3>
+                <div class="text-3xl font-bold text-primary">€540,-</div>
                 <p class="text-sm text-muted-foreground">Woningbouw basis incl. BTW</p>
               </div>
             </template>
@@ -190,7 +190,7 @@
                 </ul>
                 <Button 
                   as="a" 
-                  href="/energielabels/offerte?type=villa" 
+                  href="/energielabels/offerte?type=vrijstaand" 
                   label="Offerte Aanvragen"
                   icon="pi pi-arrow-right"
                   iconPos="right"
@@ -279,7 +279,7 @@
     <!-- Maatwerkadvies -->
     <section class="py-16 bg-muted/30">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <Card class="border-2 border-primary/20">
+        <Card class="border-2 border-primary/20 hover:border-primary/40 transition-colors">
           <template #header>
             <div class="bg-gradient-to-r from-primary to-primary/80 text-white p-8 text-center">
               <i class="pi pi-cog text-5xl mb-4"></i>
@@ -436,7 +436,7 @@
             as="a" 
             href="/energielabels/offerte" 
             label="Offerte Aanvragen"
-            severity="secondary"
+            severity="primary"
             size="large"
             icon="pi pi-arrow-right"
             iconPos="right"
@@ -447,7 +447,6 @@
             href="tel:0263115990" 
             label="Bel Direct: 026 311 5990"
             severity="secondary"
-            outlined
             size="large"
             icon="pi pi-phone"
             class="px-8"

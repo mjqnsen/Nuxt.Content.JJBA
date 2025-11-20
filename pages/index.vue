@@ -45,84 +45,87 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <!-- Content -->
-          <div>
-            <div class="inline-flex items-center gap-2 bg-primary/20 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
-              <i class="pi pi-lightning-bolt"></i>
-              <span>Energielabels</span>
-            </div>
-            <h2 class="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Energielabel nodig voor uw woning of bedrijfspand?
-            </h2>
-            <p class="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Samen kunnen we ervoor zorgen dat uw woning of bedrijfspand voorzien wordt van een 
-              <strong>officieel energielabel</strong>. Ferdinand van den Oord is ISSO gecertificeerd 
-              EP-adviseur en zorgt voor snelle, betrouwbare service.
-            </p>
-            
-            <!-- Features -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center">
-                  <i class="pi pi-check text-primary"></i>
+          <Card class="border-2 border-primary/20 hover:border-primary/40 transition-colors">
+            <template #content>
+              <div class="p-8">
+                <div class="inline-flex items-center gap-2 bg-primary/20 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
+                  <i class="pi pi-lightning-bolt"></i>
+                  <span>Energielabels</span>
                 </div>
-                <div>
-                  <h4 class="font-semibold text-foreground">ISSO Gecertificeerd</h4>
-                  <p class="text-sm text-muted-foreground">Ferdinand van den Oord</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-foreground mb-6">
+                  Energielabel nodig voor uw woning of bedrijfspand?
+                </h2>
+                <p class="text-lg text-muted-foreground mb-8 leading-relaxed">
+                  Samen kunnen we ervoor zorgen dat uw woning of bedrijfspand voorzien wordt van een 
+                  <strong>officieel energielabel</strong>. Ferdinand van den Oord is ISSO gecertificeerd 
+                  EP-adviseur en zorgt voor snelle, betrouwbare service.
+                </p>
+                
+                <!-- Features -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+                  <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center">
+                      <i class="pi pi-check text-primary"></i>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-foreground">ISSO Gecertificeerd</h4>
+                      <p class="text-sm text-muted-foreground">Ferdinand van den Oord</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center">
+                      <i class="pi pi-clock text-primary"></i>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-foreground">Binnen 5 werkdagen</h4>
+                      <p class="text-sm text-muted-foreground">Gegarandeerde levering</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center">
+                      <i class="pi pi-home text-primary"></i>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-foreground">Alle woningtypes</h4>
+                      <p class="text-sm text-muted-foreground">Vanaf €420,- incl. BTW</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center">
+                      <i class="pi pi-building text-primary"></i>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-foreground">Utiliteitsgebouwen</h4>
+                      <p class="text-sm text-muted-foreground">Vanaf €595,- excl. BTW</p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center">
-                  <i class="pi pi-clock text-primary"></i>
-                </div>
-                <div>
-                  <h4 class="font-semibold text-foreground">Binnen 5 werkdagen</h4>
-                  <p class="text-sm text-muted-foreground">Gegarandeerde levering</p>
-                </div>
-              </div>
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center">
-                  <i class="pi pi-home text-primary"></i>
-                </div>
-                <div>
-                  <h4 class="font-semibold text-foreground">Alle woningtypes</h4>
-                  <p class="text-sm text-muted-foreground">Vanaf €420,- incl. BTW</p>
-                </div>
-              </div>
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center">
-                  <i class="pi pi-building text-primary"></i>
-                </div>
-                <div>
-                  <h4 class="font-semibold text-foreground">Utiliteitsgebouwen</h4>
-                  <p class="text-sm text-muted-foreground">Vanaf €595,- excl. BTW</p>
-                </div>
-              </div>
-            </div>
 
-            <!-- CTA Buttons -->
-            <div class="flex flex-col sm:flex-row gap-4">
-              <Button 
-                as="a" 
-                href="/energielabels"
-                label="Bekijk de Mogelijkheden"
-                icon="pi pi-arrow-right"
-                iconPos="right"
-                size="large"
-                class="px-8 py-3"
-              />
-              <Button 
-                as="a" 
-                href="/energielabels/offerte"
-                label="Direct Offerte Aanvragen"
-                severity="secondary"
-                outlined
-                icon="pi pi-calculator"
-                iconPos="right"
-                size="large"
-                class="px-8 py-3"
-              />
-            </div>
-          </div>
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4">
+                  <Button 
+                    as="a" 
+                    href="/energielabels"
+                    label="Bekijk de Mogelijkheden"
+                    icon="pi pi-arrow-right"
+                    iconPos="right"
+                    size="large"
+                    class="px-8 py-3"
+                  />
+                  <Button 
+                    as="a" 
+                    href="/energielabels/offerte"
+                    label="Direct Offerte Aanvragen"
+                    severity="secondary"
+                    icon="pi pi-calculator"
+                    iconPos="right"
+                    size="large"
+                    class="px-8 py-3"
+                  />
+                </div>
+              </div>
+            </template>
+          </Card>
 
           <!-- Visual/Stats -->
           <div class="relative">
@@ -207,8 +210,6 @@
       </div>
     </section>
 
-    <RecentProjectsSection />
-
     <!-- Recent News Section -->
     <section class="py-16 bg-background">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -232,48 +233,11 @@
         </div>
         
         <div v-if="recentNews && recentNews.length > 0" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <Card 
+          <NewsCard 
             v-for="article in recentNews" 
             :key="article._path" 
-            class="overflow-hidden hover:shadow-lg transition-all duration-300 cursor-pointer group"
-            @click="$router.push(article._path)"
-          >
-            <template #header>
-              <div class="h-32 overflow-hidden">
-                <img 
-                  :src="getImageSrc(article.thumbnail)" 
-                  :alt="article.title" 
-                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  @error="handleImageError"
-                />
-              </div>
-            </template>
-            <template #content>
-              <div class="p-4">
-                <div class="flex items-center gap-1 text-xs text-muted-foreground mb-2">
-                  <i class="pi pi-calendar text-xs"></i>
-                  <span>{{ formatDate(article.date) }}</span>
-                </div>
-                <h3 class="text-base font-semibold text-foreground mb-2 group-hover:text-primary transition-colors line-clamp-2">
-                  {{ article.title }}
-                </h3>
-                <p class="text-muted-foreground text-xs line-clamp-2 mb-3">
-                  {{ article.description }}
-                </p>
-                <Button 
-                  label="Lees Meer"
-                  as="a"
-                  :href="article._path"
-                  severity="secondary" 
-                  text
-                  icon="pi pi-arrow-right"
-                  iconPos="right"
-                  size="small"
-                  class="text-xs"
-                />
-              </div>
-            </template>
-          </Card>
+            :article="article"
+          />
         </div>
         
         <div v-else class="text-center py-12">
@@ -315,19 +279,6 @@ const recentNews = await queryCollection('nieuws')
   .limit(3)
   .all()
 
-// Image fallback composable
-const { getImageSrc, handleImageError } = useImageFallback()
-
-const formatDate = (dateString) => {
-  if (!dateString) return ''
-  const date = new Date(dateString)
-  return date.toLocaleDateString('nl-NL', { 
-    year: 'numeric', 
-    month: 'short', 
-    day: 'numeric' 
-  })
-}
-
 useHead({
   title: 'Jan Jansen bouwkundig Adviseurs - De Ruimtes van Morgen Ontwerpen Vandaag',
   meta: [
@@ -339,20 +290,4 @@ useHead({
 })
 </script>
 
-<style scoped>
-.line-clamp-2 {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  line-clamp: 2;
-}
 
-.line-clamp-3 {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-  line-clamp: 3;
-}
-</style>

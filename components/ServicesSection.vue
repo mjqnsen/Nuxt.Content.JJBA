@@ -9,52 +9,20 @@
       </div>
       
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-      <Card class="text-center hover:shadow-lg transition-shadow">
-        <template #content>
-          <div class="p-6">
-            <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style="background-color: rgb(236, 88, 39, 0.1)">
-              <i class="pi pi-pencil text-2xl" style="color: rgb(236, 88, 39)"></i>
+        <Card 
+          v-for="service in services" 
+          :key="service.id"
+          class="text-center hover:shadow-lg transition-shadow border-2 border-primary/20 hover:border-primary/40 transition-colors"
+        >
+          <template #content>
+            <div class="p-6">
+              <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 bg-primary/10">
+                <i :class="`pi ${service.icon} text-2xl text-primary`"></i>
+              </div>
+              <h3 class="text-lg font-semibold text-foreground mb-2">{{ service.title }}</h3>
+              <p class="text-muted-foreground text-sm">{{ service.description }}</p>
             </div>
-            <h3 class="text-lg font-semibold text-foreground mb-2">Tekenwerk</h3>
-            <p class="text-muted-foreground text-sm">Professionele technische tekeningen en ontwerpen</p>
-          </div>
-        </template>
-      </Card>
-
-      <Card class="text-center hover:shadow-lg transition-shadow">
-        <template #content>
-          <div class="p-6">
-            <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style="background-color: rgb(236, 88, 39, 0.1)">
-              <i class="pi pi-calculator text-2xl" style="color: rgb(236, 88, 39)"></i>
-            </div>
-            <h3 class="text-lg font-semibold text-foreground mb-2">Rekenwerk</h3>
-            <p class="text-muted-foreground text-sm">Nauwkeurige berekeningen en analyses</p>
-          </div>
-        </template>
-      </Card>
-
-      <Card class="text-center hover:shadow-lg transition-shadow">
-        <template #content>
-          <div class="p-6">
-            <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style="background-color: rgb(236, 88, 39, 0.1)">
-              <i class="pi pi-sun text-2xl" style="color: rgb(236, 88, 39)"></i>
-            </div>
-            <h3 class="text-lg font-semibold text-foreground mb-2">Duurzaamheidsadvies</h3>
-            <p class="text-muted-foreground text-sm">Expertise in energiezuinige oplossingen</p>
-          </div>
-        </template>
-      </Card>
-
-      <Card class="text-center hover:shadow-lg transition-shadow">
-        <template #content>
-          <div class="p-6">
-            <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style="background-color: rgb(236, 88, 39, 0.1)">
-              <i class="pi pi-verified text-2xl" style="color: rgb(236, 88, 39)"></i>
-            </div>
-            <h3 class="text-lg font-semibold text-foreground mb-2">EP Labels</h3>
-            <p class="text-muted-foreground text-sm">Officiële EP-certificering door ISSO gecertificeerde adviseurs</p>
-          </div>
-        </template>
+          </template>
         </Card>
       </div>
     </div>
@@ -79,7 +47,44 @@ const props = defineProps({
   includePadding: {
     type: Boolean,
     default: true
+  },
+  services: {
+    type: Array,
+    default: () => []
   }
+})
+
+// Default services data
+const defaultServices = [
+  {
+    id: 'tekenwerk',
+    title: 'Tekenwerk',
+    description: 'Professionele technische tekeningen en ontwerpen',
+    icon: 'pi-pencil'
+  },
+  {
+    id: 'rekenwerk',
+    title: 'Rekenwerk',
+    description: 'Nauwkeurige berekeningen en analyses',
+    icon: 'pi-calculator'
+  },
+  {
+    id: 'duurzaamheid',
+    title: 'Duurzaamheidsadvies',
+    description: 'Expertise in energiezuinige oplossingen',
+    icon: 'pi-sun'
+  },
+  {
+    id: 'ep-labels',
+    title: 'EP Labels',
+    description: 'Officiële EP-certificering door ISSO gecertificeerde adviseurs',
+    icon: 'pi-verified'
+  }
+]
+
+// Use provided services or fall back to defaults
+const services = computed(() => {
+  return props.services.length > 0 ? props.services : defaultServices
 })
 
 // Computed
