@@ -20,10 +20,9 @@
         <!-- Featured Image -->
         <div class="mb-8">
           <img 
-            :src="getImageSrc(data.image)" 
+            :src="getImageUrl(data.image)" 
             :alt="data.title" 
             class="w-full h-64 md:h-96 object-cover rounded-lg shadow-lg"
-            @error="handleImageError"
           />
         </div>
 
@@ -39,10 +38,9 @@
             <Card v-for="(image, index) in data.gallery" :key="index" class="overflow-hidden">
               <template #header>
                 <img 
-                  :src="getImageSrc(image.src)" 
+                  :src="getImageUrl(image.src)" 
                   :alt="image.alt || `Galerij afbeelding ${index + 1}`" 
                   class="w-full h-64 object-cover"
-                  @error="handleImageError"
                 />
               </template>
               <template #content v-if="image.caption">
@@ -89,8 +87,8 @@
 const slug = useRoute().params.slug
 const data = await queryCollection('nieuws').path(`/nieuws/${slug}`).first()
 
-// Image fallback composable
-const { getImageSrc, handleImageError } = useImageFallback()
+// Image URL composable
+const { getImageUrl } = useImageUrl()
 
 const formatDate = (dateString) => {
   if (!dateString) return ''

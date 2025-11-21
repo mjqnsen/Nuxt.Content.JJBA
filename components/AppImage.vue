@@ -31,13 +31,12 @@ const props = defineProps({
 
 const emit = defineEmits(['load', 'error'])
 
-const { getImageSrc, handleImageError } = useImageFallback()
+const { getImageUrl } = useImageUrl()
 
-const imageSrc = computed(() => getImageSrc(props.src, props.fallback))
+const imageSrc = computed(() => getImageUrl(props.src))
 const imageClass = computed(() => props.class)
 
 const onError = (event) => {
-  handleImageError(event, props.fallback)
   emit('error', event)
 }
 

@@ -6,10 +6,9 @@
     <template #header>
       <div class="h-46 overflow-hidden">
         <img 
-          :src="getImageSrc(article.thumbnail)" 
+          :src="getImageUrl(article.thumbnail)" 
           :alt="article.title" 
           class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-          @error="handleImageError"
         />
       </div>
     </template>
@@ -53,8 +52,8 @@ const props = defineProps({
 // Router for navigation
 const router = useRouter()
 
-// Image fallback composable
-const { getImageSrc, handleImageError } = useImageFallback()
+// Image URL composable
+const { getImageUrl } = useImageUrl()
 
 // Handle card click
 const handleClick = () => {

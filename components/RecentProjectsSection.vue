@@ -20,7 +20,6 @@
                 src="/images/news/Placeholder.svg" 
                 :alt="project.title" 
                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                @error="handleImageError"
               />
             </div>
             <div v-else class="h-48 bg-gradient-to-br from-muted to-muted-foreground/20"></div>
@@ -61,8 +60,6 @@
 </template>
 
 <script setup>
-import { useImageFallback } from '~/composables/useImageFallback'
-
 // Props
 const props = defineProps({
   title: {
@@ -120,9 +117,6 @@ const props = defineProps({
 
 // Emits
 const emit = defineEmits(['project-click', 'view-all-click'])
-
-// Image fallback composable
-const { handleImageError } = useImageFallback()
 
 // Methods
 const handleProjectClick = (project) => {
