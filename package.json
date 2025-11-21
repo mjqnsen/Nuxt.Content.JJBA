@@ -16,7 +16,6 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "dependencies": {
-    "@libsql/client": "^0.15.15",
     "@nuxt/content": "^3.8.2",
     "@primevue/nuxt-module": "^4.0.7",
     "@primevue/themes": "^4.0.7",

@@ -157,8 +157,6 @@ const { data: doc } = await useAsyncData('contact', () =>
   queryCollection('content').path('/contact').first()
 )
 
-console.log(doc)
-
 useHead({
   title: 'Contact - Jan Jansen bouwkundig Adviseurs',
   meta: [
