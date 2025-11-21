@@ -1,8 +1,8 @@
 <template>
   <img 
-    :src="imageSrc"
+    :src="src"
     :alt="alt"
-    :class="imageClass"
+    :class="class"
     @error="onError"
     @load="onLoad"
     v-bind="$attrs"
@@ -30,11 +30,6 @@ const props = defineProps({
 })
 
 const emit = defineEmits(['load', 'error'])
-
-const { getImageUrl } = useImageUrl()
-
-const imageSrc = computed(() => getImageUrl(props.src))
-const imageClass = computed(() => props.class)
 
 const onError = (event) => {
   emit('error', event)

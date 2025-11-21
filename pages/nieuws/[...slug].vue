@@ -20,7 +20,7 @@
         <!-- Featured Image -->
         <div class="mb-8">
           <img 
-            :src="getImageUrl(data.image)" 
+            :src="data.image" 
             :alt="data.title" 
             class="w-full h-64 md:h-96 object-cover rounded-lg shadow-lg"
           />
@@ -38,7 +38,7 @@
             <Card v-for="(image, index) in data.gallery" :key="index" class="overflow-hidden">
               <template #header>
                 <img 
-                  :src="getImageUrl(image.src)" 
+                  :src="image.src" 
                   :alt="image.alt || `Galerij afbeelding ${index + 1}`" 
                   class="w-full h-64 object-cover"
                 />
@@ -86,9 +86,6 @@
 <script setup>
 const slug = useRoute().params.slug
 const data = await queryCollection('nieuws').path(`/nieuws/${slug}`).first()
-
-// Image URL composable
-const { getImageUrl } = useImageUrl()
 
 const formatDate = (dateString) => {
   if (!dateString) return ''

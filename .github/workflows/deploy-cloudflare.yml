@@ -26,6 +26,17 @@ jobs:
       - name: Install dependencies
         run: npm ci
         
+      - name: Configure AWS CLI for R2
+        run: |
+          aws configure set aws_access_key_id ${{ secrets.CLOUDFLARE_R2_ACCESS_KEY_ID }}
+          aws configure set aws_secret_access_key ${{ secrets.CLOUDFLARE_R2_SECRET_ACCESS_KEY }}
+          aws configure set region auto
+        
+      - name: Download images from R2 bucket
+        run: |
+          mkdir -p public/images
+          aws s3 sync s3://jjba/images/ ./public/images/ --endpoint-url https://faedaab59de23bbe1b99371c3444f6e7.r2.cloudflarestorage.com
+        
       - name: Build static site
         run: npm run generate
           
