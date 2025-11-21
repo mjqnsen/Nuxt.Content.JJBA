@@ -7,10 +7,8 @@ image: "/images/news/Placeholder.svg"
 gallery:
   - src: "/images/news/Placeholder.svg"
     alt: "EcoToren buitenkant"
-    caption: "De EcoToren heeft een levende gevel met geïntegreerde zonnepanelen"
   - src: "/images/news/Placeholder.svg"
     alt: "EcoToren interieur"
-    caption: "Natuurlijke verlichting en duurzame materialen overal"
 ---
 
 Wij zijn verheugd om aan te kondigen dat Jan Jansen bouwkundig Adviseurs de prestigieuze 2024 Nationale Prijs voor Duurzaamheid in Architectuur heeft gewonnen voor ons baanbrekende EcoToren project.

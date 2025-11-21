@@ -19,8 +19,8 @@
         <i class="pi pi-inbox text-6xl text-muted-foreground"></i>
         <p class="text-muted-foreground text-lg">Momenteel zijn er geen nieuwsartikelen beschikbaar.</p>
         <Button 
-          as="NuxtLink" 
-          to="/contact" 
+          as="a"
+          href="/contact" 
           label="Neem Contact Op voor Updates" 
           severity="secondary"
           outlined

@@ -185,8 +185,8 @@
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button 
-                    as="NuxtLink" 
-                    to="/contact" 
+                    as="a" 
+                    href="/contact" 
                     label="Neem Contact Op"
                     icon="pi pi-envelope"
                     size="large"
