@@ -123,7 +123,18 @@ export default defineNuxtConfig({
   // Static Site Generation
   nitro: {
     prerender: {
-      routes: ['/'],
+      routes: [
+        '/'//,
+        // Prerender nieuws pagination pages (estimated 8 pages for ~89 articles with 12 per page)
+        // '/nieuws/page-1',
+        // '/nieuws/page-2', 
+        // '/nieuws/page-3',
+        // '/nieuws/page-4',
+        // '/nieuws/page-5',
+        // '/nieuws/page-6',
+        // '/nieuws/page-7',
+        // '/nieuws/page-8'
+      ],
       crawlLinks: true
     }
   },

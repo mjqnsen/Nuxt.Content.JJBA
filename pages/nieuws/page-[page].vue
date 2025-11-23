@@ -16,6 +16,7 @@
           v-for="article in paginatedData"
           :key="article.path"
           :article="article"
+          :currentPage="pageNumber"
         />
       </div>
 

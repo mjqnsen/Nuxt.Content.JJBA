@@ -26,7 +26,7 @@
         <Button 
           label="Lees Meer"
           as="a"
-          :href="article._path || article.path"
+          :href="articleUrl"
           severity="secondary" 
           text
           icon="pi pi-arrow-right"
@@ -39,25 +39,35 @@
 </template>
 
 <script setup>
+import { computed } from 'vue'
+
 // Props
 const props = defineProps({
   article: {
     type: Object,
     required: true
+  },
+  currentPage: {
+    type: Number,
+    default: 1
   }
 })
 
 // Router for navigation
 const router = useRouter()
 
+// Compute article URL with current page parameter
+const articleUrl = computed(() => {
+  const basePath = props.article._path || props.article.path
+  if (!basePath) return '#'
+  
+  const cleanPath = basePath.replace('/nieuws/', '/nieuws/')
+  return `${cleanPath}?from=page-${props.currentPage}`
+})
+
 // Handle card click
 const handleClick = () => {
-  const path = props.article._path || props.article.path
-  if (path) {
-    // Handle different path formats
-    const cleanPath = path.replace('/nieuws/', '/nieuws/')
-    router.push(cleanPath)
-  }
+  router.push(articleUrl.value)
 }
 
 // Format date function

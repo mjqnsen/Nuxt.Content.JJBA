@@ -1,6 +1,5 @@
 ---
 title: "Start nieuwbouw kavel 4 en 5 Bandijk 75-77 Lathum"
-description: "/*! elementor - v3.7.8 - 02-10-2022 */ .elementor-widget-image-carousel .swiper-container{position:static}.elementor-widget-image-carousel .swiper-con..."
 date: "2022-10-23"
 gallery:
   - src: "/images/news/2022-10-23-start-nieuwbouw-kavel-4-en-5-bandijk-75-77-lathum/28a.jpg"

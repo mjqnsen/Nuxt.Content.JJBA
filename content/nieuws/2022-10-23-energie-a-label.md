@@ -1,6 +1,5 @@
 ---
 title: "Energie A+++ Label"
-description: "/*! elementor - v3.7.8 - 02-10-2022 */ .elementor-widget-image-carousel .swiper-container{position:static}.elementor-widget-image-carousel .swiper-con..."
 date: "2022-10-23"
 gallery:
   - src: "/images/news/2022-10-23-energie-a-label/88a-1-scaled.jpg"

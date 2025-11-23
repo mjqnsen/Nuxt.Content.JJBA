@@ -1,6 +1,5 @@
 ---
 title: "Nieuws Bandijk 75 Lathum"
-description: "/*! elementor - v3.7.8 - 02-10-2022 */ .elementor-widget-image-carousel .swiper-container{position:static}.elementor-widget-image-carousel .swiper-con..."
 date: "2022-10-23"
 gallery:
   - src: "/images/news/2022-10-23-nieuws-bandijk-75-lathum/63a.jpg"

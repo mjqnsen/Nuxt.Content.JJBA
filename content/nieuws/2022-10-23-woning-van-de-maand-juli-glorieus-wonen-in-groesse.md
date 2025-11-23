@@ -1,6 +1,5 @@
 ---
 title: "Woning van de maand juli Glorieus wonen in Groessen"
-description: "/*! elementor - v3.7.8 - 02-10-2022 */ .elementor-widget-image-carousel .swiper-container{position:static}.elementor-widget-image-carousel .swiper-con..."
 date: "2022-10-23"
 gallery:
   - src: "/images/news/2022-10-23-woning-van-de-maand-juli-glorieus-wonen-in-groesse/20a.jpg"

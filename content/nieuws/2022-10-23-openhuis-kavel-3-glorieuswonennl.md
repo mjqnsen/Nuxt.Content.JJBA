@@ -1,6 +1,5 @@
 ---
 title: "openhuis kavel 3 Glorieuswonen.nl"
-description: "/*! elementor - v3.7.8 - 02-10-2022 */ .elementor-widget-image-carousel .swiper-container{position:static}.elementor-widget-image-carousel .swiper-con..."
 date: "2022-10-23"
 gallery:
   - src: "/images/news/2022-10-23-openhuis-kavel-3-glorieuswonennl/25a.jpg"

@@ -184,12 +184,22 @@ const responsiveOptions = ref([
   }
 ]);
 
-console.log(window.history)
-
 // Determine the target URL for "back to nieuws" navigation
 const nieuwsBackUrl = computed(() => {
-  const backUrl = window.history.state?.back;
-  return backUrl?.includes('/nieuws/page-') ? backUrl : '/nieuws/page-1';
+  // Get the 'from' query parameter (e.g., 'page-3')
+  const fromParam = route.query.from;
+  
+  // Validate the parameter format and return appropriate URL
+  if (fromParam && typeof fromParam === 'string' && fromParam.startsWith('page-')) {
+    const pageNumber = fromParam.replace('page-', '');
+    // Ensure it's a valid number
+    if (!isNaN(Number(pageNumber)) && Number(pageNumber) > 0) {
+      return `/nieuws/${fromParam}`;
+    }
+  }
+  
+  // Fallback to page 1 if no valid 'from' parameter
+  return '/nieuws/page-1';
 });
 
 // Structured data for SEO

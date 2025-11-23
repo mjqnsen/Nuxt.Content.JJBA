@@ -1,6 +1,5 @@
 ---
 title: "De kortemaat a.d. Heilweg 22 gaat in de verkoop"
-description: "/*! elementor - v3.7.8 - 02-10-2022 */ .elementor-widget-image-carousel .swiper-container{position:static}.elementor-widget-image-carousel .swiper-con..."
 date: "2022-10-23"
 gallery:
   - src: "/images/news/2022-10-23-de-kortemaat-ad-heilweg-22-gaat-in-de-verkoop/22a.png"

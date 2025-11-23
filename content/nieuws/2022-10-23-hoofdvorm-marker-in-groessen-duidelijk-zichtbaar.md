@@ -1,6 +1,5 @@
 ---
 title: "HOOFDVORM MARKER IN GROESSEN DUIDELIJK ZICHTBAAR"
-description: "/*! elementor - v3.7.8 - 02-10-2022 */ .elementor-widget-image-carousel .swiper-container{position:static}.elementor-widget-image-carousel .swiper-con..."
 date: "2022-10-23"
 gallery:
   - src: "/images/news/2022-10-23-hoofdvorm-marker-in-groessen-duidelijk-zichtbaar/81a-1.jpg"

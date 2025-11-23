@@ -15,7 +15,7 @@ export default defineContentConfig({
       source: 'nieuws/**',
       schema: z.object({
         title: z.string(),
-        description: z.string(),
+        description: z.string().optional(),
         date: z.string(),
         gallery: z.array(z.object({
           src: z.string(),

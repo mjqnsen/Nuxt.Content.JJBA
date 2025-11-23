@@ -1,6 +1,5 @@
 ---
 title: "Verbouw en nieuwe blauw witten vouwwand voor sportclub Westervoort"
-description: "/*! elementor - v3.7.8 - 02-10-2022 */ .elementor-widget-image-carousel .swiper-container{position:static}.elementor-widget-image-carousel .swiper-con..."
 date: "2022-10-23"
 gallery:
   - src: "/images/news/2022-10-23-verbouw-en-nieuwe-blauw-witten-vouwwand-voor-sport/92a-1.jpg"

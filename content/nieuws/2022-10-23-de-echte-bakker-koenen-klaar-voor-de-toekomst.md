@@ -1,6 +1,5 @@
 ---
 title: "De echte bakker Koenen klaar voor de toekomst"
-description: "/*! elementor - v3.7.8 - 02-10-2022 */ .elementor-widget-image-carousel .swiper-container{position:static}.elementor-widget-image-carousel .swiper-con..."
 date: "2022-10-23"
 gallery:
   - src: "/images/news/2022-10-23-de-echte-bakker-koenen-klaar-voor-de-toekomst/37a.jpg"
