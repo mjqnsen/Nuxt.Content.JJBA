@@ -101,7 +101,7 @@
                 src="/images/about/officebuilding.jpg"
                 alt="Zenith Architectuur kantoorgebouw"
                 class="w-full h-80 lg:h-96 object-cover"
-                fallback="/images/news/Placeholder.svg"
+                fallback="/images/Placeholder.svg"
               />
               <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
               <div class="absolute bottom-4 left-4 text-white">

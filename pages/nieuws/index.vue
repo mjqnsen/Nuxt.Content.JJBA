@@ -4,7 +4,7 @@
 
 <script setup>
 // Redirect to page 1 for SEO and clean URLs
-await navigateTo('/nieuws/1', { replace: true })
+await navigateTo('/nieuws/page-1', { replace: true })
 </script>
 
 

@@ -7,7 +7,7 @@
   >
     <template #header>
         <img 
-          :src="article.gallery?.[0]?.src || '/images/news/Placeholder.svg'" 
+          :src="article.gallery?.[0]?.src || '/images/Placeholder.svg'" 
           :alt="article.gallery?.[0]?.alt || article.title" 
           class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
         />

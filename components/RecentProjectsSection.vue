@@ -17,7 +17,7 @@
           <template #header>
             <div v-if="true" class="h-50 overflow-hidden">
               <img 
-                src="/images/news/Placeholder.svg" 
+                src="/images/Placeholder.svg" 
                 :alt="project.title" 
                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
               />

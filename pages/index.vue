@@ -222,8 +222,8 @@
           </div>
           <Button 
             as="a" 
-            href="/nieuws/1" 
-            label="Bekijk Alle Nieuws"
+            href="/nieuws/page-1" 
+            label="Alles bekijken"
             severity="secondary"
             outlined
             icon="pi pi-arrow-right"
@@ -251,8 +251,8 @@
         <div class="text-center mt-8 sm:hidden">
           <Button 
             as="a" 
-            href="/nieuws/1" 
-            label="Bekijk Alle Nieuws"
+            href="/nieuws/page-1" 
+            label="Alles bekijken"
             severity="secondary"
             outlined
             icon="pi pi-arrow-right"
@@ -266,8 +266,6 @@
 </template>
 
 <script setup>
-import RecentProjectsSection from '../components/RecentProjectsSection.vue'
-
 // Define layout
 definePageMeta({
   layout: 'default'
