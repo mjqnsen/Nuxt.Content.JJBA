@@ -7,4 +7,4 @@ gallery:
     alt: "BTW-verlaging ook voor bouwtekeningen architecten - Image 1"
 ---
 
-/*! elementor - v3.7.8 - 02-10-2022 */ .elementor-widget-image-carousel .swiper-container{position:static}.elementor-widget-image-carousel .swiper-container .swiper-slide figure{line-height:inherit}.elementor-widget-image-carousel .swiper-slide{text-align:center}.elementor-image-carousel-wrapper:not(.swiper-container-initialized) .swiper-slide{max-width:calc(100% / var(--e-image-carousel-slides-to-show, 3))} Per 1 maart 2013 is tijdelijk het btw-tarief voor renovatie en herstel van woningen ouder dan twee jaar verlaagt. De tijdelijke btw-verlaging kan ook voor architecten werkzaamheden worden toegepast. Het verlaagde btw-tarief geldt voor een jaar.
+Per 1 maart 2013 is tijdelijk het btw-tarief voor renovatie en herstel van woningen ouder dan twee jaar verlaagt. De tijdelijke btw-verlaging kan ook voor architecten werkzaamheden worden toegepast. Het verlaagde btw-tarief geldt voor een jaar.

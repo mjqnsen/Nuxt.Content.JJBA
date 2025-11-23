@@ -7,4 +7,4 @@ gallery:
     alt: "Hoogste punt Villa Raaijenstraat Elst - Image 1"
 ---
 
-/*! elementor - v3.7.8 - 02-10-2022 */ .elementor-widget-image-carousel .swiper-container{position:static}.elementor-widget-image-carousel .swiper-container .swiper-slide figure{line-height:inherit}.elementor-widget-image-carousel .swiper-slide{text-align:center}.elementor-image-carousel-wrapper:not(.swiper-container-initialized) .swiper-slide{max-width:calc(100% / var(--e-image-carousel-slides-to-show, 3))} De nieuwbouw vordert gestaagd en het hoogste punt is bereikt. Nog even de gevels wit keimen en de oplevering staat gepland medio juni 2016.
+De nieuwbouw vordert gestaagd en het hoogste punt is bereikt. Nog even de gevels wit keimen en de oplevering staat gepland medio juni 2016.

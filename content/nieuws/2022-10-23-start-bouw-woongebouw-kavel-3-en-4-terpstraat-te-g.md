@@ -7,4 +7,4 @@ gallery:
     alt: "Start bouw woongebouw kavel 3 en 4 Terpstraat te Groessen - Image 1"
 ---
 
-/*! elementor - v3.7.8 - 02-10-2022 */ .elementor-widget-image-carousel .swiper-container{position:static}.elementor-widget-image-carousel .swiper-container .swiper-slide figure{line-height:inherit}.elementor-widget-image-carousel .swiper-slide{text-align:center}.elementor-image-carousel-wrapper:not(.swiper-container-initialized) .swiper-slide{max-width:calc(100% / var(--e-image-carousel-slides-to-show, 3))} In opdracht van de kopers van de kavels werken we de omgevingsvergunning uit om op korte termijn te kunnen beginnen met de realisatie van deze 2 prachtige landelijke woningen. Alleen kavel 2 kan nog in bouwteam worden gerealiseerd. Maak een afspraak om gezamenlijk uw woning te ontwerpen?
+In opdracht van de kopers van de kavels werken we de omgevingsvergunning uit om op korte termijn te kunnen beginnen met de realisatie van deze 2 prachtige landelijke woningen. Alleen kavel 2 kan nog in bouwteam worden gerealiseerd. Maak een afspraak om gezamenlijk uw woning te ontwerpen?
