@@ -2,8 +2,9 @@
 title: "Jan Jansen bouwkundig Adviseurs Breidt Team Uit met Drie Nieuwe Medewerkers"
 description: "Wij zijn verheugd drie getalenteerde professionals te verwelkomen in ons groeiende team: een senior architect, duurzaamheidsconsultant en interieurontwerper."
 date: "2024-09-15"
-thumbnail: "/images/news/Placeholder.svg"
-image: "/images/news/Placeholder.svg"
+gallery:
+  - src: "/images/news/Placeholder.svg"
+    alt: "Team uitbreiding foto"
 ---
 
 Nu ons bureau blijft groeien en spannende nieuwe projecten onderneemt, zijn wij verheugd de toevoeging van drie uitzonderlijke professionals aan het Jan Jansen bouwkundig Adviseurs team aan te kondigen.

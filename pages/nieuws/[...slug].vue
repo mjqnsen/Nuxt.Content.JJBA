@@ -52,47 +52,50 @@
           </div>
         </header>
 
-        <!-- Featured Image -->
-        <figure v-if="data.image" class="mb-12">
-          <img
-            :src="data.image"
-            :alt="data.title"
-            class="w-full h-64 md:h-96 lg:h-[500px] rounded-lg"
-            pt:image:class="object-cover"
-            preview
-          />
-          <figcaption
-            v-if="data.imageCaption"
-            class="mt-2 text-sm text-muted-foreground italic text-center"
-          >
-            {{ data.imageCaption }}
-          </figcaption>
-        </figure>
+        <!-- Featured Image or Gallery -->
+        <div v-if="data.gallery && data.gallery.length > 0" class="mb-12">
+          <!-- Single Image -->
+          <figure v-if="data.gallery.length === 1">
+            <img
+              :src="data.gallery[0].src"
+              :alt="data.gallery[0].alt"
+              class="w-full h-64 md:h-96 lg:h-[500px] rounded-lg object-cover"
+            />
+          </figure>
+
+          <!-- Gallery for Multiple Images -->
+          <div v-else class="max-w-4xl mx-auto">
+            <Galleria 
+              :value="galleryImages" 
+              :responsiveOptions="responsiveOptions" 
+              :numVisible="5" 
+              :circular="true" 
+              containerStyle="max-width: 100%"
+              class="rounded-lg overflow-hidden"
+            >
+              <template #item="slotProps">
+                <img 
+                  :src="slotProps.item.itemImageSrc" 
+                  :alt="slotProps.item.alt" 
+                  style="width: 100%; display: block"
+                />
+              </template>
+              <template #thumbnail="slotProps">
+                <img 
+                  :src="slotProps.item.thumbnailImageSrc" 
+                  :alt="slotProps.item.alt" 
+                  style="width: 80px; height: 60px; display: block"
+                />
+              </template>
+            </Galleria>
+          </div>
+        </div>
 
         <!-- Article Content -->
         <div class="w-full">
           <!-- Text content - narrower on desktop -->
           <div class="max-w-2xl mx-auto article-content">
             <ContentRenderer :value="data" />
-          </div>
-        </div>
-
-        <!-- Additional Images - Full width -->
-        <div v-if="data.gallery && data.gallery.length > 0" class="mt-12">
-          <div class="max-w-2xl mx-auto mb-6">
-            <h3 class="text-2xl font-semibold text-foreground">
-              Project Galerij
-            </h3>
-          </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <Image
-              v-for="(image, index) in data.gallery"
-              :src="image.src"
-              :alt="image.alt"
-              :key="index"
-              class="w-full h-64 object-cover"
-              preview
-            />
           </div>
         </div>
 
@@ -137,6 +140,8 @@
 </template>
 
 <script setup>
+import { ref, computed } from "vue";
+
 const route = useRoute();
 const slug = route.params.slug;
 const data = await queryCollection("nieuws").path(`/nieuws/${slug}`).first();
@@ -152,13 +157,39 @@ const formatDate = (dateString) => {
   });
 };
 
+// Transform gallery data for Galleria component
+const galleryImages = computed(() => {
+  if (!data?.gallery) return [];
+  return data.gallery.map(image => ({
+    itemImageSrc: image.src,
+    thumbnailImageSrc: image.src,
+    alt: image.alt
+  }));
+});
+
+// Responsive options for Galleria
+const responsiveOptions = ref([
+  {
+    breakpoint: '1300px',
+    numVisible: 4
+  },
+  {
+    breakpoint: '768px',
+    numVisible: 3
+  },
+  {
+    breakpoint: '575px',
+    numVisible: 1
+  }
+]);
+
 // Structured data for SEO
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: data?.title,
   description: data?.description,
-  image: data?.image,
+  image: data?.gallery?.[0]?.src,
   datePublished: data?.date,
   dateModified: data?.updatedAt || data?.date,
   author: {
@@ -189,14 +220,14 @@ useHead({
     // Open Graph
     { property: "og:title", content: data?.title },
     { property: "og:description", content: data?.description },
-    { property: "og:image", content: data?.image },
+    { property: "og:image", content: data?.gallery?.[0]?.src },
     { property: "og:type", content: "article" },
     { property: "article:published_time", content: data?.date },
     // Twitter
     { name: "twitter:card", content: "summary_large_image" },
     { name: "twitter:title", content: data?.title },
     { name: "twitter:description", content: data?.description },
-    { name: "twitter:image", content: data?.image },
+    { name: "twitter:image", content: data?.gallery?.[0]?.src },
   ],
   script: [
     {
@@ -207,166 +238,25 @@ useHead({
 });
 </script>
 
-<style>
-/* Article content styling */
-.article-content {
-  font-family:
-    "Inter",
-    system-ui,
-    -apple-system,
-    sans-serif;
-}
+<style lang="css" scoped>
+  .article-content:deep(h2) {
+    @apply text-4xl mb-4 font-bold;
+  }
 
-/* Headings - Using multiple selectors for better specificity */
-.article-content :deep(h1),
-.article-content h1 {
-  font-size: 2.5rem !important;
-  font-weight: 700 !important;
-  margin: 3rem 0 1.5rem 0 !important;
-  line-height: 1.2 !important;
-  color: hsl(var(--foreground)) !important;
-}
+  .article-content:deep(h3) {
+    @apply text-2xl mb-4 font-bold;
+  }
 
-.article-content :deep(h2),
-.article-content h2 {
-  font-size: 2rem !important;
-  font-weight: 600 !important;
-  margin: 2.5rem 0 1rem 0 !important;
-  line-height: 1.3 !important;
-  color: hsl(var(--foreground)) !important;
-  border-bottom: 2px solid hsl(var(--border)) !important;
-  padding-bottom: 0.5rem !important;
-}
+  .article-content:deep(p:not(p:last-of-type)) {
+    @apply mb-10;
+  }
 
-.article-content :deep(h3),
-.article-content h3 {
-  font-size: 1.5rem !important;
-  font-weight: 600 !important;
-  margin: 2rem 0 1rem 0 !important;
-  line-height: 1.4 !important;
-  color: hsl(var(--foreground)) !important;
-}
+  .article-content:deep(ul) {
+    @apply list-disc list-inside space-y-2 pl-4 mb-10;
+  }
 
-.article-content :deep(h4),
-.article-content h4 {
-  font-size: 1.25rem !important;
-  font-weight: 600 !important;
-  margin: 1.5rem 0 0.75rem 0 !important;
-  line-height: 1.4 !important;
-  color: hsl(var(--foreground)) !important;
-}
+  .article-content:deep(li) {
+    @apply leading-relaxed;
+  }
 
-.article-content :deep(h5),
-.article-content h5 {
-  font-size: 1.125rem !important;
-  font-weight: 600 !important;
-  margin: 1.25rem 0 0.5rem 0 !important;
-  line-height: 1.4 !important;
-  color: hsl(var(--foreground)) !important;
-}
-
-.article-content :deep(h6),
-.article-content h6 {
-  font-size: 1rem !important;
-  font-weight: 600 !important;
-  margin: 1rem 0 0.5rem 0 !important;
-  line-height: 1.4 !important;
-  color: hsl(var(--foreground)) !important;
-}
-
-/* Paragraphs with more spacing */
-.article-content :deep(p) {
-  margin: 0 0 2rem 0;
-  line-height: 1.7;
-  color: hsl(var(--foreground));
-}
-
-/* Last paragraph should not have bottom margin */
-.article-content :deep(p:last-child) {
-  margin-bottom: 0;
-}
-
-/* First paragraph after heading should have less top margin */
-.article-content :deep(h1 + p),
-.article-content :deep(h2 + p),
-.article-content :deep(h3 + p),
-.article-content :deep(h4 + p) {
-  margin-top: 0;
-}
-
-/* Lists */
-.article-content :deep(ul),
-.article-content :deep(ol) {
-  margin: 1.5rem 0;
-  padding-left: 1.5rem;
-}
-
-.article-content :deep(li) {
-  margin: 0.75rem 0;
-  line-height: 1.7;
-  color: hsl(var(--foreground));
-}
-
-/* Blockquotes */
-.article-content :deep(blockquote) {
-  border-left: 4px solid hsl(var(--primary));
-  padding-left: 1.5rem;
-  padding: 1rem 0 1rem 1.5rem;
-  margin: 2rem 0;
-  background: hsl(var(--muted) / 0.3);
-  border-radius: 0 0.5rem 0.5rem 0;
-  font-style: italic;
-  font-size: 1.125rem;
-}
-
-/* Links */
-.article-content :deep(a) {
-  color: hsl(var(--primary));
-  text-decoration: underline;
-  font-weight: 500;
-}
-
-.article-content :deep(a:hover) {
-  text-decoration: none;
-}
-
-/* Strong and emphasis */
-.article-content :deep(strong) {
-  font-weight: 600;
-  color: hsl(var(--foreground));
-}
-
-.article-content :deep(em) {
-  font-style: italic;
-}
-
-/* Code */
-.article-content :deep(code) {
-  background: hsl(var(--muted));
-  padding: 0.125rem 0.25rem;
-  border-radius: 0.25rem;
-  font-family: "Monaco", "Menlo", monospace;
-  font-size: 0.875rem;
-}
-
-.article-content :deep(pre) {
-  background: hsl(var(--muted));
-  padding: 1rem;
-  border-radius: 0.5rem;
-  overflow-x: auto;
-  margin: 1.5rem 0;
-}
-
-.article-content :deep(pre code) {
-  background: transparent;
-  padding: 0;
-}
-
-/* Images within content */
-.article-content :deep(img) {
-  border-radius: 0.5rem;
-  margin: 2rem 0;
-  max-width: 100%;
-  height: auto;
-}
 </style>

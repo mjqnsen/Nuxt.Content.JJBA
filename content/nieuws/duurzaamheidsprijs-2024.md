@@ -2,8 +2,6 @@
 title: "Jan Jansen bouwkundig Adviseurs Wint Nationale Duurzaamheidsprijs"
 description: "Ons nieuwste project, de EcoToren, is erkend met de 2024 Nationale Prijs voor Duurzaamheid in Architectuur voor het innovatieve groene gebouwontwerp."
 date: "2024-11-15"
-thumbnail: "/images/news/Placeholder.svg"
-image: "/images/news/Placeholder.svg"
 gallery:
   - src: "/images/news/Placeholder.svg"
     alt: "EcoToren buitenkant"

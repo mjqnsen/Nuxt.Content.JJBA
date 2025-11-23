@@ -17,13 +17,10 @@ export default defineContentConfig({
         title: z.string(),
         description: z.string(),
         date: z.string(),
-        thumbnail: z.string().optional(),
-        image: z.string().optional(),
         gallery: z.array(z.object({
           src: z.string(),
-          alt: z.string(),
-          caption: z.string().optional()
-        })).optional()
+          alt: z.string()
+        })).min(1, "Gallery must contain at least one image")
       })
     })
   }

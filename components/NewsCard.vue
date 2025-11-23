@@ -6,8 +6,8 @@
     <template #header>
       <div class="h-46 overflow-hidden">
         <img 
-          :src="article.thumbnail" 
-          :alt="article.title" 
+          :src="article.gallery?.[0]?.src || '/images/news/Placeholder.svg'" 
+          :alt="article.gallery?.[0]?.alt || article.title" 
           class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
         />
       </div>
