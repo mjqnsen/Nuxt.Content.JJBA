@@ -159,7 +159,7 @@ const menuItems = ref([
   },
   {
     label: 'Nieuws',
-    route: '/nieuws'
+    route: '/nieuws/1'
   },
   {
     label: 'Contact',

@@ -1,13 +1,15 @@
 {
   "name": "architecture-marketing-site",
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "push": "git config http.sslverify false && git push origin master && git config http.sslverify true"
+    "push": "git config http.sslverify false && git push origin master && git config http.sslverify true",
+    "sync-images": "git config http.sslverify false && node scripts/sync-images.js && git config http.sslverify true"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
@@ -16,10 +18,14 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.937.0",
     "@nuxt/content": "^3.8.2",
     "@primevue/nuxt-module": "^4.0.7",
     "@primevue/themes": "^4.0.7",
     "better-sqlite3": "^12.4.1",
+    "csv-parse": "^6.1.0",
+    "dotenv": "^17.2.3",
+    "mime-types": "^3.0.2",
     "primeicons": "^7.0.0",
     "primevue": "^4.0.7",
     "zod": "^4.1.12"

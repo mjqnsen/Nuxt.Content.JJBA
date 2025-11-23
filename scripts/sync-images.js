@@ -10,8 +10,14 @@ import { join, relative } from 'path'
 import { S3Client, PutObjectCommand, DeleteObjectCommand, ListObjectsV2Command } from '@aws-sdk/client-s3'
 import { config } from 'dotenv'
 import { lookup } from 'mime-types'
+import https from 'https'
 // Load environment variables
 config()
+
+// Create HTTPS agent that handles SSL certificate issues
+const httpsAgent = new https.Agent({
+  rejectUnauthorized: false, // Disable SSL certificate verification for corporate environments
+})
 
 const r2Client = new S3Client({
   region: process.env.CLOUDFLARE_R2_REGION || 'auto',
@@ -21,6 +27,9 @@ const r2Client = new S3Client({
     secretAccessKey: process.env.CLOUDFLARE_R2_SECRET_ACCESS_KEY,
   },
   forcePathStyle: true,
+  requestHandler: {
+    httpsAgent: httpsAgent,
+  },
 })
 
 const BUCKET_NAME = process.env.CLOUDFLARE_R2_BUCKET_NAME

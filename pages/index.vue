@@ -7,7 +7,7 @@
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
         <div class="text-center">
           <h1 class="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
-            De Ruimtes van Morgen Ontwerpen Vandaag
+            Rekenwerken, Tekenwerk, Goed bekeken werk
           </h1>
           <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto animate-fade-in-delay">
             Jan Jansen bouwkundig Adviseurs combineert innovatief ontwerp met duurzame praktijken om ruimtes te creëren die inspireren en blijvend zijn.
@@ -215,14 +215,14 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between mb-12">
           <div>
-            <h2 class="text-3xl font-bold text-foreground mb-4">Laatste Nieuws</h2>
+            <h2 class="text-3xl font-bold text-foreground mb-4">Laatste Nieuws en Projecten</h2>
             <p class="text-lg text-muted-foreground">
               Blijf op de hoogte van onze recente projecten en bedrijfsnieuws
             </p>
           </div>
           <Button 
             as="a" 
-            href="/nieuws" 
+            href="/nieuws/1" 
             label="Bekijk Alle Nieuws"
             severity="secondary"
             outlined
@@ -251,7 +251,7 @@
         <div class="text-center mt-8 sm:hidden">
           <Button 
             as="a" 
-            href="/nieuws" 
+            href="/nieuws/1" 
             label="Bekijk Alle Nieuws"
             severity="secondary"
             outlined

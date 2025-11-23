@@ -10,7 +10,7 @@
               >Home</NuxtLink
             >
             <span class="text-muted-foreground">•</span>
-            <NuxtLink to="/nieuws" class="text-primary hover:underline"
+            <NuxtLink to="/nieuws/1" class="text-primary hover:underline"
               >Nieuws</NuxtLink
             >
             <span class="text-muted-foreground">•</span>
@@ -102,7 +102,7 @@
         <!-- Navigation -->
         <nav class="mt-12 pt-8 border-t border-border">
           <NuxtLink
-            to="/nieuws"
+            to="/nieuws/1"
             class="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground border border-border rounded-lg hover:bg-muted transition-colors"
           >
             <i class="pi pi-arrow-left"></i>
@@ -127,11 +127,11 @@
             verplaatst.
           </p>
           <NuxtLink
-            to="/nieuws"
+            to="/nieuws/1"
             class="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-medium rounded-lg hover:bg-primary/90 transition-colors"
           >
             <i class="pi pi-arrow-left"></i>
-            <span>Bekijk Alle Nieuws</span>
+            <span>Terug naar Nieuws</span>
           </NuxtLink>
         </div>
       </div>
@@ -144,6 +144,12 @@ import { ref, computed } from "vue";
 
 const route = useRoute();
 const slug = route.params.slug;
+
+// Redirect numeric-only slugs to pagination
+if (Array.isArray(slug) && slug.length === 1 && /^\d+$/.test(slug[0])) {
+  await navigateTo(`/nieuws/${slug[0]}`, { replace: true });
+}
+
 const data = await queryCollection("nieuws").path(`/nieuws/${slug}`).first();
 
 const formatDate = (dateString) => {

@@ -2,18 +2,17 @@
   <Card 
     class="overflow-hidden hover:shadow-lg transition-all duration-300 cursor-pointer group"
     @click="handleClick"
+    pt:header:class="h-64 overflow-hidden"
+    pt:content:class="p-4"
   >
     <template #header>
-      <div class="h-46 overflow-hidden">
         <img 
           :src="article.gallery?.[0]?.src || '/images/news/Placeholder.svg'" 
           :alt="article.gallery?.[0]?.alt || article.title" 
           class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
         />
-      </div>
     </template>
     <template #content>
-      <div class="p-4">
         <div class="flex items-center gap-1 text-xs text-muted-foreground mb-2">
           <i class="pi pi-calendar text-xs"></i>
           <span>{{ formatDate(article.date) }}</span>
@@ -35,7 +34,6 @@
           size="small"
           class="text-xs"
         />
-      </div>
     </template>
   </Card>
 </template>
