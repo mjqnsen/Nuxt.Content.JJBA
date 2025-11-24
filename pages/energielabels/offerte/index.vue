@@ -22,15 +22,15 @@
           </template>
           <template #content>
             <!-- Error Message -->
-            <Message 
-              v-if="showError"
-              severity="error" 
-              :closable="true"
-              class="inline-flex"
-              @close="showError = false"
-            >
-              {{ errorMessage }}
-            </Message>
+            <div v-if="showError" class="p-6 pb-0">
+              <Message 
+                severity="error" 
+                :closable="true"
+                @close="showError = false"
+              >
+                {{ errorMessage }}
+              </Message>
+            </div>
             
             <form @submit.prevent="submitForm" class="p-6 space-y-8">
               <!-- Property Type Selection -->
