@@ -155,7 +155,7 @@
                     />
                     <small v-if="cityError" class="p-error">{{ cityError }}</small>
                   </div>
-                  <div v-if="showSurfaceArea">
+                  <!-- <div v-if="showSurfaceArea">
                     <label class="block text-sm font-medium text-foreground mb-2">
                       {{ surfaceAreaLabel }}
                     </label>
@@ -165,9 +165,9 @@
                       suffix=" m²"
                       :min="0"
                     />
-                  </div>
+                  </div> -->
                 </div>
-                <div>
+                <!-- <div>
                   <label class="block text-sm font-medium text-foreground mb-2">
                     Bouwjaar (indien bekend)
                   </label>
@@ -177,11 +177,11 @@
                     :min="1800"
                     :max="new Date().getFullYear()"
                   />
-                </div>
+                </div> -->
               </div>
 
               <!-- Timeline -->
-              <Divider />
+              <!-- <Divider />
               <div class="space-y-4">
                 <h3 class="text-xl font-semibold text-foreground">Wanneer heeft u het energielabel nodig?</h3>
                 <div class="w-full">
@@ -201,6 +201,27 @@
                     </template>
                   </SelectButton>
                 </div>
+              </div> -->
+
+              <!-- Building Plans -->
+              <Divider />
+              <div class="space-y-4">
+                <h3 class="text-xl font-semibold text-foreground">Zijn er bouwtekeningen van het pand? *</h3>
+                <div class="flex flex-wrap gap-4">
+                  <div class="flex items-center">
+                    <RadioButton v-model="hasBuildingPlans" inputId="plans-yes" value="ja" />
+                    <label for="plans-yes" class="ml-2 cursor-pointer">Ja</label>
+                  </div>
+                  <div class="flex items-center">
+                    <RadioButton v-model="hasBuildingPlans" inputId="plans-no" value="nee" />
+                    <label for="plans-no" class="ml-2 cursor-pointer">Nee</label>
+                  </div>
+                  <!-- <div class="flex items-center">
+                    <RadioButton v-model="hasBuildingPlans" inputId="plans-unknown" value="onbekend" />
+                    <label for="plans-unknown" class="ml-2 cursor-pointer">Onbekend</label>
+                  </div> -->
+                </div>
+                <small v-if="hasBuildingPlansError" class="p-error">{{ hasBuildingPlansError }}</small>
               </div>
 
               <!-- Additional Information -->
@@ -298,6 +319,7 @@ const validationSchema = toTypedSchema(
     surfaceArea: z.number().nullable().optional(),
     buildYear: z.number().nullable().optional(),
     timeline: z.string().nullable().optional(),
+    hasBuildingPlans: z.string().min(1, 'Selecteer een optie'),
     additionalInfo: z.string().optional()
   })
 )
@@ -317,6 +339,7 @@ const { handleSubmit, resetForm: resetFormFields, setFieldValue } = useForm({
     surfaceArea: null,
     buildYear: null,
     timeline: null,
+    hasBuildingPlans: '',
     additionalInfo: ''
   }
 })
@@ -333,6 +356,7 @@ const { value: city, errorMessage: cityError } = useField('city')
 const { value: surfaceArea } = useField('surfaceArea')
 const { value: buildYear } = useField('buildYear')
 const { value: timeline } = useField('timeline')
+const { value: hasBuildingPlans, errorMessage: hasBuildingPlansError } = useField('hasBuildingPlans')
 const { value: additionalInfo } = useField('additionalInfo')
 
 const isSubmitting = ref(false)
@@ -354,9 +378,9 @@ const propertyTypes = [
     icon: 'pi pi-home'
   },
   {
-    value: 'villa',
-    label: 'Villa',
-    price: '€550,- incl. BTW',
+    value: 'Vrijstaandhuis',
+    label: 'Vrijstaandhuis',
+    price: '€540,- incl. BTW',
     icon: 'pi pi-home'
   },
   {
@@ -443,9 +467,10 @@ const submitForm = handleSubmit(async (values) => {
     formData.append('address', values.address || '')
     formData.append('postalCode', values.postalCode || '')
     formData.append('city', values.city || '')
-    formData.append('surfaceArea', values.surfaceArea ? String(values.surfaceArea) : '')
-    formData.append('buildYear', values.buildYear ? String(values.buildYear) : '')
-    formData.append('timeline', values.timeline || '')
+    // formData.append('surfaceArea', values.surfaceArea ? String(values.surfaceArea) : '')
+    // formData.append('buildYear', values.buildYear ? String(values.buildYear) : '')
+    // formData.append('timeline', values.timeline || '')
+    formData.append('hasBuildingPlans', values.hasBuildingPlans || '')
     formData.append('additionalInfo', values.additionalInfo || '')
     
     // Add some metadata
