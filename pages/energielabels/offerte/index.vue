@@ -22,15 +22,15 @@
           </template>
           <template #content>
             <!-- Error Message -->
-            <div v-if="showError" class="p-6 pb-0">
-              <Message 
-                severity="error" 
-                :closable="true"
-                @close="showError = false"
-              >
-                {{ errorMessage }}
-              </Message>
-            </div>
+            <Message 
+              v-if="showError"
+              severity="error" 
+              :closable="true"
+              class="inline-flex"
+              @close="showError = false"
+            >
+              {{ errorMessage }}
+            </Message>
             
             <form @submit.prevent="submitForm" class="p-6 space-y-8">
               <!-- Property Type Selection -->
@@ -43,7 +43,7 @@
                     optionLabel="label"
                     optionValue="value"
                     :multiple="false"
-                    class="w-full flex-wrap"
+                    class="w-full flex-wrap justify-center"
                     :class="{ 'p-invalid': propertyTypeError }"
                   >
                     <template #option="{ option }">
@@ -70,6 +70,7 @@
                     <InputText 
                       v-model="firstName" 
                       class="w-full"
+                      size="large"
                       :class="{ 'p-invalid': firstNameError }"
                     />
                     <small v-if="firstNameError" class="p-error">{{ firstNameError }}</small>
@@ -190,7 +191,7 @@
                     optionLabel="label"
                     optionValue="value"
                     :multiple="false"
-                    class="w-full flex-wrap"
+                    class="w-full flex-wrap justify-center"
                   >
                     <template #option="{ option }">
                       <div class="flex flex-col items-center justify-center p-3 min-h-[80px] text-center">
