@@ -92,7 +92,7 @@ const MyPreset = definePreset(Aura, {
       dark: {
         primary: {
           color: '{orange.500}',
-          contrastColor: '{zinc.900}',
+          contrastColor: '{slate.50}',
           hoverColor: '{orange.400}',
           activeColor: '{orange.300}'
         },
@@ -169,10 +169,6 @@ export default defineNuxtConfig({
       theme: {
         preset: MyPreset,
         options: {
-          cssLayer: {
-            name: 'primevue',
-            order: 'tailwind-base, primevue, tailwind-utilities'
-          },
           darkModeSelector: '.dark'
         }
       },
