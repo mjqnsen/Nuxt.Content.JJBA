@@ -16,7 +16,6 @@
             <Button 
               as="a" 
               href="/over-ons"
-              severity="warn"
               label="Meer Over Ons"
               size="large"
               class="px-8 py-3"
