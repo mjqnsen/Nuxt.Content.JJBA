@@ -2,32 +2,72 @@
   <NuxtLayout>
     <div>
       <!-- Hero Section -->
-    <section class="relative bg-gradient-to-br from-orange-700 to-orange-300 text-white overflow-hidden">
-      <div class="absolute inset-0 bg-black/30"></div>
-      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-        <div class="text-center">
-          <h1 class="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
-            Rekenwerken, Tekenwerk, Goed bekeken werk
-          </h1>
-          <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto animate-fade-in-delay">
-            Jan Jansen bouwkundig adviseurs combineert innovatief ontwerp met duurzame praktijken om ruimtes te creëren die inspireren en blijvend zijn.
-          </p>
-          <div class="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-delay-2">
-            <Button 
-              as="a" 
-              href="/over-ons"
-              label="Meer Over Ons"
-              size="large"
-              class="px-8 py-3"
-            />
-            <Button 
-              as="a" 
-              href="/contact" 
-              label="Start Uw Project"
-              severity="secondary"
-              size="large"
-              class="px-8 py-3"
-            />
+    <section class="relative overflow-hidden bg-gradient-to-br from-orange-700 to-orange-400">
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-24">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          <!-- Title (Mobile Only - First) -->
+          <div class="lg:hidden order-1 text-center">
+            <h1 class="text-6xl font-bold text-white animate-fade-in">
+              Rekenwerken, Tekenwerk, Goed bekeken werk
+            </h1>
+          </div>
+          
+          <!-- Images - Second on mobile, second on desktop -->
+          <div class="order-2 lg:order-2">
+            <div class="flex gap-2 h-80 lg:h-96">
+              <!-- First image - Wide -->
+              <div class="flex-[1.5] h-full overflow-hidden rounded-lg shadow-xl">
+                <img 
+                  src="/images/hero/Klapstraat209Westervoort03.jpg" 
+                  alt="Hero image 1"
+                  class="w-full h-full object-cover object-[55%]"
+                />
+              </div>
+              <!-- Second image - Narrow, partial view -->
+              <div class="flex-[0.8] h-full overflow-hidden rounded-lg shadow-xl">
+                <img 
+                  src="/images/hero/91d.jpg" 
+                  alt="Hero image 2"
+                  class="w-full h-full object-cover object-[55%]"
+                />
+              </div>
+              <!-- Third image - Narrow, partial view -->
+              <div class="flex-[0.8] h-full overflow-hidden rounded-lg shadow-xl">
+                <img 
+                  src="/images/hero/91b-e1697881520736.jpg" 
+                  alt="Hero image 3"
+                  class="w-full h-full object-cover object-[12%]"
+                />
+              </div>
+            </div>
+          </div>
+          
+          <!-- Content - Third on mobile, first on desktop -->
+          <div class="text-center lg:text-left order-3 lg:order-1">
+            <!-- Title (Desktop Only) -->
+            <h1 class="hidden lg:block text-4xl md:text-6xl font-bold mb-6 text-white animate-fade-in">
+              Rekenwerken, Tekenwerk, Goed bekeken werk
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 text-white animate-fade-in-delay">
+              Jan Jansen bouwkundig adviseurs combineert innovatief ontwerp met duurzame praktijken om ruimtes te creëren die inspireren en blijvend zijn.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in-delay-2">
+              <Button 
+                as="a" 
+                href="/over-ons"
+                label="Meer Over Ons"
+                size="large"
+                class="px-8 py-3"
+              />
+              <Button 
+                as="a" 
+                href="/contact" 
+                label="Start Uw Project"
+                severity="secondary"
+                size="large"
+                class="px-8 py-3"
+              />
+            </div>
           </div>
         </div>
       </div>
