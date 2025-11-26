@@ -459,7 +459,7 @@
 
 <script setup>
 useHead({
-  title: 'Energielabels - Jan Jansen bouwkundig Adviseurs',
+  title: 'Energielabels - Jan Jansen bouwkundig adviseurs',
   meta: [
     {
       name: 'description',

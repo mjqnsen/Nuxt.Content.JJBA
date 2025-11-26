@@ -23,7 +23,7 @@ De nieuwe vestiging bevindt zich in kantoorgebouw Westerpoort, een lichte modern
 
 ## Diensten
 
-Bij Jan Jansen bouwkundig Adviseurs bieden wij een breed scala aan diensten:
+Bij Jan Jansen bouwkundig adviseurs bieden wij een breed scala aan diensten:
 
 - **Tekenwerk**: Professionele technische tekeningen en ontwerpen
 - **Rekenwerk**: Nauwkeurige berekeningen en analyses

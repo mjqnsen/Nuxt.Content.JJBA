@@ -515,7 +515,7 @@ const resetForm = () => {
 
 // SEO
 useHead({
-  title: 'Energielabel Offerte Aanvragen - Jan Jansen bouwkundig Adviseurs',
+  title: 'Energielabel Offerte Aanvragen - Jan Jansen bouwkundig adviseurs',
   meta: [
     {
       name: 'description',

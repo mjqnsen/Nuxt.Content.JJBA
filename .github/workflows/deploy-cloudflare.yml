@@ -53,7 +53,7 @@ jobs:
       - name: Add deployment summary
         run: |
           echo "## 🚀 Deployment Complete!" >> $GITHUB_STEP_SUMMARY
-          echo "Your Jan Jansen bouwkundig Adviseurs website has been deployed to Cloudflare Pages." >> $GITHUB_STEP_SUMMARY
+          echo "Your Jan Jansen bouwkundig adviseurs website has been deployed to Cloudflare Pages." >> $GITHUB_STEP_SUMMARY
           echo "- **Build Status**: ✅ Success" >> $GITHUB_STEP_SUMMARY
           echo "- **Deploy Time**: $(date)" >> $GITHUB_STEP_SUMMARY
           echo "- **Branch**: ${{ github.ref_name }}" >> $GITHUB_STEP_SUMMARY

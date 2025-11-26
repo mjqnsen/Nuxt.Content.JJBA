@@ -120,14 +120,14 @@ const onPageChange = (event) => {
 // SEO and meta tags
 const pageTitle = computed(() =>
   pageNumber.value === 1
-    ? "Nieuws - Jan Jansen bouwkundig Adviseurs"
-    : `Nieuws - Pagina ${pageNumber.value} - Jan Jansen bouwkundig Adviseurs`
+    ? "Nieuws - Jan Jansen bouwkundig adviseurs"
+    : `Nieuws - Pagina ${pageNumber.value} - Jan Jansen bouwkundig adviseurs`
 );
 
 const pageDescription = computed(() =>
   pageNumber.value === 1
-    ? "Laatste nieuws, projectupdates en inzichten van Jan Jansen bouwkundig Adviseurs."
-    : `Nieuws pagina ${pageNumber.value} - Bekijk meer nieuwsartikelen, projectupdates en inzichten van Jan Jansen bouwkundig Adviseurs.`
+    ? "Laatste nieuws, projectupdates en inzichten van Jan Jansen bouwkundig adviseurs."
+    : `Nieuws pagina ${pageNumber.value} - Bekijk meer nieuwsartikelen, projectupdates en inzichten van Jan Jansen bouwkundig adviseurs.`
 );
 
 useHead({

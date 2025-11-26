@@ -178,7 +178,7 @@ function New-MarkdownFile {
             $truncated
         }
     } else { 
-        "Nieuws artikel van Jan Jansen Bouwkundig Adviseurs" 
+        "Nieuws artikel van Jan Jansen bouwkundig adviseurs" 
     }
     
     # Build markdown content

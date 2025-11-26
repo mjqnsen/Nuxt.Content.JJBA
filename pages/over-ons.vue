@@ -5,7 +5,7 @@
         <!-- Hero Section -->
         <div class="text-center mb-12">
           <h1 class="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Over Ons - Jan Jansen bouwkundig Adviseurs
+            Over Ons - Jan Jansen bouwkundig adviseurs
           </h1>
             <div class="text-xl md:text-2xl text-primary font-semibold mb-8">
               Tekenwerk, Rekenwerk, Goed Bekeken Werk
@@ -32,7 +32,7 @@
                     class="mb-4"
                   />
                   <p class="text-muted-foreground leading-relaxed mb-4">
-                    Jan Jansen is de oprichter van Jan Jansen bouwkundig Adviseurs. Met jarenlange ervaring in de bouwsector levert hij kwalitatief hoogstaand teken- en rekenwerk voor diverse bouwprojecten.
+                    Jan Jansen is de oprichter van Jan Jansen bouwkundig adviseurs. Met jarenlange ervaring in de bouwsector levert hij kwalitatief hoogstaand teken- en rekenwerk voor diverse bouwprojecten.
                   </p>
                   <div class="flex flex-wrap gap-2">
                     <Tag value="Tekenwerk" />
@@ -88,7 +88,7 @@
                 <div class="p-6">
                   <h2 class="text-2xl font-semibold text-foreground mb-4">Ons Bedrijf</h2>
                   <p class="text-muted-foreground leading-relaxed mb-4">
-                    Jan Jansen bouwkundig Adviseurs is een gespecialiseerd bureau dat zich richt op kwalitatief hoogstaand teken- en rekenwerk. Wij combineren vakmanschap met innovatieve oplossingen en richten ons steeds meer op de groeiende markt van duurzaamheidsvraagstukken in de bouw.
+                    Jan Jansen bouwkundig adviseurs is een gespecialiseerd bureau dat zich richt op kwalitatief hoogstaand teken- en rekenwerk. Wij combineren vakmanschap met innovatieve oplossingen en richten ons steeds meer op de groeiende markt van duurzaamheidsvraagstukken in de bouw.
                   </p>
                   <Chip 
                     label="Duurzaamheid" 
@@ -218,11 +218,11 @@ const { data: doc } = await useAsyncData('over-ons', () =>
 )
 
 useHead({
-  title: 'Over Ons - Jan Jansen bouwkundig Adviseurs',
+  title: 'Over Ons - Jan Jansen bouwkundig adviseurs',
   meta: [
     {
       name: 'description',
-      content: 'Tekenwerk, rekenwerk, goed bekeken werk. Jan Jansen bouwkundig Adviseurs met ISSO gecertificeerd EP-adviseur Ferdinand van den Oord. Gevestigd in Westerpoort.'
+      content: 'Tekenwerk, rekenwerk, goed bekeken werk. Jan Jansen bouwkundig adviseurs met ISSO gecertificeerd EP-adviseur Ferdinand van den Oord. Gevestigd in Westerpoort.'
     }
   ]
 })

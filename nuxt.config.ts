@@ -148,11 +148,11 @@ export default defineNuxtConfig({
   // SEO and meta configuration
   app: {
     head: {
-      title: 'Jan Jansen bouwkundig Adviseurs',
+      title: 'Jan Jansen bouwkundig adviseurs',
       meta: [
         { name: 'description', content: 'Professionele bouwkundige diensten in Westervoort. Specialisten in architectuur, renovatie en duurzame bouwoplossingen.' },
         { name: 'keywords', content: 'architectuur, bouwkundig adviseur, renovatie, Westervoort, duurzaam bouwen' },
-        { property: 'og:title', content: 'Jan Jansen bouwkundig Adviseurs' },
+        { property: 'og:title', content: 'Jan Jansen bouwkundig adviseurs' },
         { property: 'og:description', content: 'Professionele bouwkundige diensten in Westervoort. Specialisten in architectuur, renovatie en duurzame bouwoplossingen.' },
         { property: 'og:type', content: 'website' },
         { name: 'twitter:card', content: 'summary_large_image' }

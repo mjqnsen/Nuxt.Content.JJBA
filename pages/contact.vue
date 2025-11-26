@@ -6,7 +6,7 @@
       <div>
         <div v-if="doc">
           <div class="prose prose-lg max-w-none">
-            <h1 class="text-4xl font-bold text-foreground mb-6">Contact Jan Jansen bouwkundig Adviseurs</h1>
+            <h1 class="text-4xl font-bold text-foreground mb-6">Contact Jan Jansen bouwkundig adviseurs</h1>
               
               <div class="bg-muted/50 p-6 rounded-lg mb-8">
                 <h2 class="text-2xl font-semibold text-foreground mb-4">Neem contact op</h2>
@@ -140,7 +140,7 @@
               </div>
               <h4 class="font-semibold text-foreground mb-2">Persoonlijke Benadering</h4>
               <p class="text-muted-foreground text-sm">
-                Bij Jan Jansen bouwkundig Adviseurs staat persoonlijk contact centraal. Elk project krijgt onze volledige aandacht.
+                Bij Jan Jansen bouwkundig adviseurs staat persoonlijk contact centraal. Elk project krijgt onze volledige aandacht.
               </p>
             </div>
           </template>
@@ -158,11 +158,11 @@ const { data: doc } = await useAsyncData('contact', () =>
 )
 
 useHead({
-  title: 'Contact - Jan Jansen bouwkundig Adviseurs',
+  title: 'Contact - Jan Jansen bouwkundig adviseurs',
   meta: [
     {
       name: 'description',
-      content: 'Neem contact op met Jan Jansen bouwkundig Adviseurs voor uw volgende project. Contactinformatie en aanvraagformulier.'
+      content: 'Neem contact op met Jan Jansen bouwkundig adviseurs voor uw volgende project. Contactinformatie en aanvraagformulier.'
     }
   ]
 })

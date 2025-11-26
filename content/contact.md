@@ -1,4 +1,4 @@
-# Contact Jan Jansen bouwkundig Adviseurs
+# Contact Jan Jansen bouwkundig adviseurs
 
 ## Neem contact op
 

@@ -1,10 +1,10 @@
-# Welkom bij Jan Jansen bouwkundig Adviseurs
+# Welkom bij Jan Jansen bouwkundig adviseurs
 
 Het creëren van uitzonderlijke ruimtes die inspireren en duurzaam zijn door middel van innovatief ontwerp en duurzame praktijken.
 
 ## Onze Visie
 
-Bij Jan Jansen bouwkundig Adviseurs geloven wij dat geweldige architectuur de kracht heeft om gemeenschappen te transformeren en levens te verbeteren. Ons team van getalenteerde architecten en ontwerpers werkt samen om ruimtes te creëren die niet alleen mooi zijn, maar ook functioneel, duurzaam en betekenisvol.
+Bij Jan Jansen bouwkundig adviseurs geloven wij dat geweldige architectuur de kracht heeft om gemeenschappen te transformeren en levens te verbeteren. Ons team van getalenteerde architecten en ontwerpers werkt samen om ruimtes te creëren die niet alleen mooi zijn, maar ook functioneel, duurzaam en betekenisvol.
 
 ## Wat Ons Onderscheidt
 

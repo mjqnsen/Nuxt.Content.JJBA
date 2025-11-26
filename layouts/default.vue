@@ -7,7 +7,7 @@
           <!-- Logo -->
           <div class="flex items-center">
             <NuxtLink to="/" class="block">
-              <img src="/JJBAlogo.png" alt="Jan Jansen bouwkundig Adviseurs logo" class="h-20 w-auto transition-transform hover:scale-105" />
+              <img src="/JJBAlogo.png" alt="Jan Jansen bouwkundig adviseurs logo" class="h-20 w-auto transition-transform hover:scale-105" />
             </NuxtLink>
           </div>
           
@@ -47,7 +47,7 @@
           <!-- Header -->
           <div class="flex items-center justify-between p-6 border-b border-border">
             <div class="flex items-center space-x-3">
-              <img src="/JJBAlogo.png" alt="Jan Jansen bouwkundig Adviseurs logo" class="h-10 w-auto" />
+              <img src="/JJBAlogo.png" alt="Jan Jansen bouwkundig adviseurs logo" class="h-10 w-auto" />
               <span class="font-semibold text-lg text-foreground">Menu</span>
             </div>
             <Button 
@@ -81,7 +81,7 @@
           <!-- Footer -->
           <div class="p-6 border-t border-border bg-muted">
             <div class="text-center text-sm text-muted-foreground">
-              <p>Jan Jansen bouwkundig Adviseurs</p>
+              <p>Jan Jansen bouwkundig adviseurs</p>
               <p class="mt-1">info@janjansen.net</p>
             </div>
           </div>
@@ -100,8 +100,8 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
             <div class="flex items-center space-x-3 mb-4">
-              <img src="/JJBAlogo.png" alt="Jan Jansen bouwkundig Adviseurs logo" class="h-12 w-auto" />
-              <h3 class="text-lg font-semibold text-foreground">Jan Jansen bouwkundig Adviseurs</h3>
+              <img src="/JJBAlogo.png" alt="Jan Jansen bouwkundig adviseurs logo" class="h-12 w-auto" />
+              <h3 class="text-lg font-semibold text-foreground">Jan Jansen bouwkundig adviseurs</h3>
             </div>
             <p class="text-muted-foreground mb-4">
               Het creëren van uitzonderlijke ruimtes die inspireren en duurzaam zijn door middel van innovatief ontwerp en duurzame praktijken.
@@ -134,7 +134,7 @@
         </div>
         <Divider class="my-8" />
         <div class="text-center text-muted-foreground">
-          <p>&copy; {{ new Date().getFullYear() }} Jan Jansen bouwkundig Adviseurs. Alle rechten voorbehouden.</p>
+          <p>&copy; {{ new Date().getFullYear() }} Jan Jansen bouwkundig adviseurs. Alle rechten voorbehouden.</p>
         </div>
       </div>
     </footer>

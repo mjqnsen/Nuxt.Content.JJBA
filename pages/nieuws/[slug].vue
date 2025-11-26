@@ -213,11 +213,11 @@ const structuredData = {
   dateModified: data?.updatedAt || data?.date,
   author: {
     "@type": "Organization",
-    name: "Jan Jansen bouwkundig Adviseurs",
+    name: "Jan Jansen bouwkundig adviseurs",
   },
   publisher: {
     "@type": "Organization",
-    name: "Jan Jansen bouwkundig Adviseurs",
+    name: "Jan Jansen bouwkundig adviseurs",
     logo: {
       "@type": "ImageObject",
       url: "https://jjba.nl/JJBAlogo.png",
@@ -227,14 +227,14 @@ const structuredData = {
 
 useHead({
   title: data
-    ? `${data.title} - Jan Jansen bouwkundig Adviseurs`
-    : "Nieuwsartikel - Jan Jansen bouwkundig Adviseurs",
+    ? `${data.title} - Jan Jansen bouwkundig adviseurs`
+    : "Nieuwsartikel - Jan Jansen bouwkundig adviseurs",
   meta: [
     {
       name: "description",
       content:
         data?.description ||
-        "Nieuwsartikel van Jan Jansen bouwkundig Adviseurs",
+        "Nieuwsartikel van Jan Jansen bouwkundig adviseurs",
     },
     // Open Graph
     { property: "og:title", content: data?.title },

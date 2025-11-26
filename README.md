@@ -1,4 +1,4 @@
-# Jan Jansen bouwkundig Adviseurs - Architecture Marketing Website
+# Jan Jansen bouwkundig adviseurs - Architecture Marketing Website
 
 A modern, responsive architecture marketing website built with Nuxt 3, featuring a complete Dutch design and content management system.
 
@@ -6,7 +6,7 @@ A modern, responsive architecture marketing website built with Nuxt 3, featuring
 
 ## 🏗️ About
 
-This is a professional marketing website for **Jan Jansen bouwkundig Adviseurs**, a Dutch architecture firm. The site showcases their services, projects, and company information in a modern, responsive design with a custom orange color theme.
+This is a professional marketing website for **Jan Jansen bouwkundig adviseurs**, a Dutch architecture firm. The site showcases their services, projects, and company information in a modern, responsive design with a custom orange color theme.
 
 ## ✨ Features
 
@@ -172,7 +172,7 @@ Update CSS variables in `assets/css/main.css` for global style modifications.
 
 ## 🌟 Company Information
 
-**Jan Jansen bouwkundig Adviseurs**
+**Jan Jansen bouwkundig adviseurs**
 - **Address**: Het Vergun 26b, 6931 KD Westervoort
 - **Phone**: +31 (0)26 319 4411
 - **Email**: info@janjansen.net
@@ -180,11 +180,11 @@ Update CSS variables in `assets/css/main.css` for global style modifications.
 
 ## 📝 License
 
-This project is proprietary software for Jan Jansen bouwkundig Adviseurs.
+This project is proprietary software for Jan Jansen bouwkundig adviseurs.
 
 ## 🤝 Contributing
 
-This is a private project for Jan Jansen bouwkundig Adviseurs. For any changes or updates, please contact the development team.
+This is a private project for Jan Jansen bouwkundig adviseurs. For any changes or updates, please contact the development team.
 
 ---
 

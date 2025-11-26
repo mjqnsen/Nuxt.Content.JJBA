@@ -10,7 +10,7 @@
             Rekenwerken, Tekenwerk, Goed bekeken werk
           </h1>
           <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto animate-fade-in-delay">
-            Jan Jansen bouwkundig Adviseurs combineert innovatief ontwerp met duurzame praktijken om ruimtes te creëren die inspireren en blijvend zijn.
+            Jan Jansen bouwkundig adviseurs combineert innovatief ontwerp met duurzame praktijken om ruimtes te creëren die inspireren en blijvend zijn.
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-delay-2">
             <Button 
@@ -277,11 +277,11 @@ const recentNews = await queryCollection('nieuws')
   .all()
 
 useHead({
-  title: 'Jan Jansen bouwkundig Adviseurs - De Ruimtes van Morgen Ontwerpen Vandaag',
+  title: 'Jan Jansen bouwkundig adviseurs - De Ruimtes van Morgen Ontwerpen Vandaag',
   meta: [
     {
       name: 'description',
-      content: 'Jan Jansen bouwkundig Adviseurs combineert innovatief ontwerp met duurzame praktijken om uitzonderlijke woon- en commerciële ruimtes te creëren.'
+      content: 'Jan Jansen bouwkundig adviseurs combineert innovatief ontwerp met duurzame praktijken om uitzonderlijke woon- en commerciële ruimtes te creëren.'
     }
   ]
 })

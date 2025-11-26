@@ -114,7 +114,7 @@
     <section class="py-12 bg-muted/30">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h3 class="text-xl font-semibold text-foreground mb-4">
-          Waarom Jan Jansen bouwkundig Adviseurs?
+          Waarom Jan Jansen bouwkundig adviseurs?
         </h3>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div class="text-center">
@@ -147,7 +147,7 @@
 <script setup>
 // SEO
 useHead({
-  title: 'Bedankt voor uw aanvraag - Jan Jansen bouwkundig Adviseurs',
+  title: 'Bedankt voor uw aanvraag - Jan Jansen bouwkundig adviseurs',
   meta: [
     {
       name: 'description',
