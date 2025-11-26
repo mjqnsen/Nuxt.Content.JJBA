@@ -45,7 +45,7 @@
       <!-- View All Button -->
       <div v-if="showViewAllButton" class="text-center mt-8">
         <Button 
-          :as="viewAllButtonLink ? 'NuxtLink' : 'button'"
+          :as="viewAllButtonLink ? 'a' : 'button'"
           :to="viewAllButtonLink"
           :label="viewAllButtonLabel"
           severity="secondary"

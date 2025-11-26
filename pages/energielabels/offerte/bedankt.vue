@@ -89,7 +89,7 @@
 
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button 
-                    as="NuxtLink"
+                    as="a"
                     to="/energielabels"
                     label="Terug naar Energielabels"
                     icon="pi pi-arrow-left"
@@ -97,7 +97,7 @@
                     outlined
                   />
                   <Button 
-                    as="NuxtLink"
+                    as="a"
                     to="/"
                     label="Naar Homepage"
                     icon="pi pi-home"
