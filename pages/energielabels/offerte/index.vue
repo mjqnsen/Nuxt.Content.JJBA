@@ -107,6 +107,7 @@
                     <InputText 
                       v-model="phone" 
                       class="w-full"
+                      type="tel"
                       :class="{ 'p-invalid': phoneError }"
                     />
                     <small v-if="phoneError" class="p-error">{{ phoneError }}</small>
@@ -353,9 +354,9 @@ const { value: phone, errorMessage: phoneError } = useField('phone')
 const { value: address, errorMessage: addressError } = useField('address')
 const { value: postalCode, errorMessage: postalCodeError } = useField('postalCode')
 const { value: city, errorMessage: cityError } = useField('city')
-const { value: surfaceArea } = useField('surfaceArea')
-const { value: buildYear } = useField('buildYear')
-const { value: timeline } = useField('timeline')
+// const { value: surfaceArea } = useField('surfaceArea')
+// const { value: buildYear } = useField('buildYear')
+// const { value: timeline } = useField('timeline')
 const { value: hasBuildingPlans, errorMessage: hasBuildingPlansError } = useField('hasBuildingPlans')
 const { value: additionalInfo } = useField('additionalInfo')
 
@@ -410,37 +411,37 @@ const propertyTypes = [
 ]
 
 // Timeline options
-const timelines = [
-  {
-    value: 'urgent',
-    label: 'Binnen 1 week',
-    icon: 'pi pi-clock'
-  },
-  {
-    value: 'normal',
-    label: 'Binnen 2-3 weken',
-    icon: 'pi pi-calendar'
-  },
-  {
-    value: 'flexible',
-    label: 'Geen haast',
-    icon: 'pi pi-calendar-plus'
-  }
-]
+// const timelines = [
+//   {
+//     value: 'urgent',
+//     label: 'Binnen 1 week',
+//     icon: 'pi pi-clock'
+//   },
+//   {
+//     value: 'normal',
+//     label: 'Binnen 2-3 weken',
+//     icon: 'pi pi-calendar'
+//   },
+//   {
+//     value: 'flexible',
+//     label: 'Geen haast',
+//     icon: 'pi pi-calendar-plus'
+//   }
+// ]
 
 // Computed properties
-const showSurfaceArea = computed(() => {
-  if (!propertyType.value) return false
-  return propertyType.value.includes('utiliteit') || propertyType.value === 'villa'
-})
+// const showSurfaceArea = computed(() => {
+//   if (!propertyType.value) return false
+//   return propertyType.value.includes('utiliteit') || propertyType.value === 'villa'
+// })
 
-const surfaceAreaLabel = computed(() => {
-  if (!propertyType.value) return 'Gebruiks Oppervlakte (GBO)'
-  if (propertyType.value.includes('utiliteit')) {
-    return 'Bruto Vloer Oppervlakte (BVO) *'
-  }
-  return 'Gebruiks Oppervlakte (GBO)'
-})
+// const surfaceAreaLabel = computed(() => {
+//   if (!propertyType.value) return 'Gebruiks Oppervlakte (GBO)'
+//   if (propertyType.value.includes('utiliteit')) {
+//     return 'Bruto Vloer Oppervlakte (BVO) *'
+//   }
+//   return 'Gebruiks Oppervlakte (GBO)'
+// })
 
 // Get property type from URL params
 onMounted(() => {
@@ -449,6 +450,8 @@ onMounted(() => {
     setFieldValue('propertyType', route.query.type)
   }
 })
+
+const FORMSPARK_ACTION_URL = 'https://submit-form.com/geG1PJZG1'
 
 // Form submission using VeeValidate
 const submitForm = handleSubmit(async (values) => {
@@ -479,7 +482,7 @@ const submitForm = handleSubmit(async (values) => {
     formData.append('_format', 'plain')
     
     // Submit to Formspree
-    const response = await fetch('https://formspree.io/f/xkgagwja', {
+    const response = await fetch(FORMSPARK_ACTION_URL, {
       method: 'POST',
       body: formData,
       headers: {

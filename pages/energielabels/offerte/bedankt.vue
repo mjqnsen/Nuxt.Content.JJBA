@@ -90,7 +90,7 @@
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button 
                     as="a"
-                    to="/energielabels"
+                    href="/energielabels"
                     label="Terug naar Energielabels"
                     icon="pi pi-arrow-left"
                     severity="secondary"
@@ -98,7 +98,7 @@
                   />
                   <Button 
                     as="a"
-                    to="/"
+                    href="/"
                     label="Naar Homepage"
                     icon="pi pi-home"
                   />

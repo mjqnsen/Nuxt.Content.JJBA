@@ -9,7 +9,8 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "push": "git config http.sslverify false && git push origin master && git config http.sslverify true",
-    "sync-images": "git config http.sslverify false && node scripts/sync-images.js && git config http.sslverify true"
+    "sync-images": "git config http.sslverify false && node scripts/sync-images.js && git config http.sslverify true",
+    "download:r2": "node scripts/download-r2-bucket.js"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
