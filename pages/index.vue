@@ -2,7 +2,7 @@
   <NuxtLayout>
     <div>
       <!-- Hero Section -->
-       <section class="relative bg-gradient-to-br from-orange-600 to-orange-500 text-white overflow-hidden" style="background: linear-gradient(to bottom right, rgb(236, 88, 39), rgb(189, 120, 82))">
+    <section class="relative bg-gradient-to-br from-orange-700 to-orange-300 text-white overflow-hidden">
       <div class="absolute inset-0 bg-black/30"></div>
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
         <div class="text-center">
