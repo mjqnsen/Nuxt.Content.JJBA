@@ -20,7 +20,7 @@
                 <img 
                   src="/images/about/jan-jansen.jpg" 
                   alt="Jan Jansen" 
-                  class="w-full h-64 object-cover"
+                  class="w-full h-64 object-cover object-[50%_40%]"
                 />
               </template>
               <template #content>
@@ -49,7 +49,7 @@
                 <img 
                   src="/images/about/ferdinand.jpg" 
                   alt="Ferdinand van den Oord" 
-                  class="w-full h-64 object-cover"
+                  class="w-full h-64 object-cover object-[50%_30%]"
                 />
               </template>
               <template #content>
