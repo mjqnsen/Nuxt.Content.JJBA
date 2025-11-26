@@ -56,12 +56,12 @@
                 <div class="p-6">
                   <h2 class="text-2xl font-semibold text-foreground mb-2">Ferdinand van den Oord</h2>
                   <Badge 
-                    value="Gecertificeerd EP-adviseur" 
+                    value="RVO gecertificeerd EP-adviseur" 
                     severity="success" 
                     class="mb-4"
                   />
                   <p class="text-muted-foreground leading-relaxed mb-4">
-                    Ferdinand van den Oord is gecertificeerd EP-adviseur woningbouw, utiliteitsbouw en detailopnamen. Hij verzorgt de zogenaamde Energie Prestatie Labels.
+                    Ferdinand van den Oord is RVO gecertificeerd EP-adviseur woningbouw, utiliteitsbouw en detailopnamen. Hij verzorgt de zogenaamde Energie Prestatie Labels.
                   </p>
                   <div class="flex flex-wrap gap-2">
                     <Tag value="Woningbouw" />
@@ -222,7 +222,7 @@ useHead({
   meta: [
     {
       name: 'description',
-      content: 'Tekenwerk, rekenwerk, goed bekeken werk. Jan Jansen bouwkundig adviseurs met gecertificeerd EP-adviseur Ferdinand van den Oord. Gevestigd in Westerpoort.'
+      content: 'Tekenwerk, rekenwerk, goed bekeken werk. Jan Jansen bouwkundig adviseurs met RVO gecertificeerd EP-adviseur Ferdinand van den Oord. Gevestigd in Westerpoort.'
     }
   ]
 })

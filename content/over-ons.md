@@ -9,11 +9,11 @@ Jan Jansen houdt zich tegenwoordig niet alleen meer bezig met goed teken- en rek
 
 ## Ons Team
 
-### Ferdinand van den Oord - Gecertificeerd EP-adviseur
+### Ferdinand van den Oord - RVO Gecertificeerd EP-adviseur
 
-Ferdinand van den Oord is gecertificeerd EP-adviseur woningbouw, utiliteitsbouw en detailopnamen. Hij verzorgt de zogenaamde Energie Prestatie Labels.
+Ferdinand van den Oord is RVO gecertificeerd EP-adviseur woningbouw, utiliteitsbouw en detailopnamen. Hij verzorgt de zogenaamde Energie Prestatie Labels.
 
-![Ferdinand van den Oord](/images/about/ferdinand.jpg "Ferdinand van den Oord - Gecertificeerd EP-adviseur")
+![Ferdinand van den Oord](/images/about/ferdinand.jpg "Ferdinand van den Oord - RVO gecertificeerd EP-adviseur")
 
 ## Onze Vestiging
 
@@ -28,7 +28,7 @@ Bij Jan Jansen bouwkundig adviseurs bieden wij een breed scala aan diensten:
 - **Tekenwerk**: Professionele technische tekeningen en ontwerpen
 - **Rekenwerk**: Nauwkeurige berekeningen en analyses
 - **Duurzaamheidsadvies**: Expertise in energiezuinige oplossingen
-- **Energie Prestatie Labels**: Officiële energielabels door onze gecertificeerde EP-adviseur
+- **Energie Prestatie Labels**: Officiële energielabels door onze RVO gecertificeerde EP-adviseur
 
 ## Contact Opnemen
 

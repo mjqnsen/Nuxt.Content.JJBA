@@ -56,7 +56,7 @@
                 </h2>
                 <p class="text-lg text-muted-foreground mb-8 leading-relaxed">
                   Samen kunnen we ervoor zorgen dat uw woning of bedrijfspand voorzien wordt van een 
-                  <strong>officieel energielabel</strong>. Ferdinand van den Oord is gecertificeerd 
+                  <strong>officieel energielabel</strong>. Ferdinand van den Oord is RVO gecertificeerd 
                   EP-adviseur en zorgt voor snelle, betrouwbare service.
                 </p>
                 
@@ -67,7 +67,7 @@
                       <i class="pi pi-check text-primary"></i>
                     </div>
                     <div>
-                      <h4 class="font-semibold text-foreground">Gecertificeerd EP-adviseur</h4>
+                      <h4 class="font-semibold text-foreground">RVO gecertificeerd EP-adviseur</h4>
                       <p class="text-sm text-muted-foreground">Ferdinand van den Oord</p>
                     </div>
                   </div>

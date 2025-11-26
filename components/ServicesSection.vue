@@ -77,7 +77,7 @@ const defaultServices = [
   {
     id: 'ep-labels',
     title: 'EP Labels',
-    description: 'Officiële energielabels door onze gecertificeerde EP-adviseur',
+    description: 'Officiële energielabels door onze RVO gecertificeerde EP-adviseur',
     icon: 'pi-verified'
   }
 ]

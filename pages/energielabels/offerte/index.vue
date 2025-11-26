@@ -519,7 +519,7 @@ useHead({
   meta: [
     {
       name: 'description',
-      content: 'Vraag eenvoudig een offerte aan voor uw energielabel. Snelle service door gecertificeerde EP-adviseur. Ontvang binnen 1 werkdag bericht.'
+      content: 'Vraag eenvoudig een offerte aan voor uw energielabel. Snelle service door RVO gecertificeerde EP-adviseur. Ontvang binnen 1 werkdag bericht.'
     }
   ]
 })
