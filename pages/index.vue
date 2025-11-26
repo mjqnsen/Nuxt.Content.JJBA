@@ -56,7 +56,7 @@
                 </h2>
                 <p class="text-lg text-muted-foreground mb-8 leading-relaxed">
                   Samen kunnen we ervoor zorgen dat uw woning of bedrijfspand voorzien wordt van een 
-                  <strong>officieel energielabel</strong>. Ferdinand van den Oord is ISSO gecertificeerd 
+                  <strong>officieel energielabel</strong>. Ferdinand van den Oord is gecertificeerd 
                   EP-adviseur en zorgt voor snelle, betrouwbare service.
                 </p>
                 
@@ -67,7 +67,7 @@
                       <i class="pi pi-check text-primary"></i>
                     </div>
                     <div>
-                      <h4 class="font-semibold text-foreground">ISSO Gecertificeerd</h4>
+                      <h4 class="font-semibold text-foreground">Gecertificeerd EP-adviseur</h4>
                       <p class="text-sm text-muted-foreground">Ferdinand van den Oord</p>
                     </div>
                   </div>
@@ -131,7 +131,7 @@
             <!-- Energy Label Visual -->
             <div class="bg-white rounded-xl shadow-lg p-8 border border-primary/20">
               <div class="text-center mb-6">
-                <h3 class="text-xl font-semibold text-gray-900 mb-2">Energielabel Woningen</h3>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Energielabels</h3>
                 <p class="text-gray-600 text-sm">Van A++++ (zeer zuinig) tot G (minst zuinig)</p>
               </div>
               
@@ -184,7 +184,7 @@
               </div>
 
               <!-- Quick Stats -->
-              <div class="grid grid-cols-2 gap-4 mt-6 pt-6 border-t border-gray-200">
+              <!-- <div class="grid grid-cols-2 gap-4 mt-6 pt-6 border-t border-gray-200">
                 <div class="text-center">
                   <div class="text-2xl font-bold text-orange-600">500+</div>
                   <div class="text-sm text-gray-600">Energielabels afgegeven</div>
@@ -193,7 +193,7 @@
                   <div class="text-2xl font-bold text-orange-600">5★</div>
                   <div class="text-sm text-gray-600">Gemiddelde beoordeling</div>
                 </div>
-              </div>
+              </div> -->
             </div>
 
             <!-- Floating Badge -->

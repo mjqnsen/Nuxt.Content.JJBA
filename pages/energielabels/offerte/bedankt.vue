@@ -119,7 +119,7 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div class="text-center">
             <i class="pi pi-verified text-3xl text-primary mb-2"></i>
-            <h4 class="font-medium text-foreground mb-2">ISSO Gecertificeerd</h4>
+            <h4 class="font-medium text-foreground mb-2">Gecertificeerd EP-adviseur</h4>
             <p class="text-sm text-muted-foreground">
               Officieel erkende EP-adviseur
             </p>

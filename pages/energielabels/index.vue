@@ -9,7 +9,7 @@
             Energielabels voor Woningen & Bedrijfspanden
           </h1>
           <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-            ISSO gecertificeerde EP-adviseur Ferdinand van den Oord - Snelle levering binnen 5 werkdagen
+            Gecertificeerd EP-adviseur Ferdinand van den Oord - Snelle levering binnen 5 werkdagen
           </p>
         </div>
         
@@ -399,7 +399,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div class="text-center">
-            <Badge value="ISSO Gecertificeerd" severity="success" class="mb-4" />
+            <Badge value="Gecertificeerd EP-adviseur" severity="success" class="mb-4" />
             <h4 class="font-semibold text-foreground">Ferdinand van den Oord</h4>
             <p class="text-muted-foreground">EP-adviseur woningbouw & utiliteit</p>
           </div>
@@ -463,11 +463,11 @@ useHead({
   meta: [
     {
       name: 'description',
-      content: 'Gecertificeerde energielabels voor woningen en bedrijfspanden. ISSO gecertificeerd EP-adviseur. Snelle levering binnen 5 werkdagen. Vanaf €420,- incl. BTW.'
+      content: 'Officiële energielabels voor woningen en bedrijfspanden door gecertificeerd EP-adviseur. Snelle levering binnen 5 werkdagen. Vanaf €420,- incl. BTW.'
     },
     {
       name: 'keywords',
-      content: 'energielabel, woningbouw, utiliteit, EP-adviseur, ISSO, RVO, Westervoort'
+      content: 'energielabel, woningbouw, utiliteit, EP-adviseur, RVO, Westervoort'
     }
   ]
 })

@@ -519,7 +519,7 @@ useHead({
   meta: [
     {
       name: 'description',
-      content: 'Vraag eenvoudig een offerte aan voor uw energielabel. Snelle service door ISSO gecertificeerde EP-adviseur. Ontvang binnen 24 uur bericht.'
+      content: 'Vraag eenvoudig een offerte aan voor uw energielabel. Snelle service door gecertificeerde EP-adviseur. Ontvang binnen 24 uur bericht.'
     }
   ]
 })
