@@ -283,8 +283,8 @@
           />
           <Button 
             as="a" 
-            href="mailto:info@janjansen.net" 
-            label="info@janjansen.net"
+            href="mailto:f.vd.oord@janjansen.net" 
+            label="f.vd.oord@janjansen.net"
             icon="pi pi-envelope"
             severity="secondary"
             outlined
