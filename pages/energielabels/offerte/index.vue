@@ -5,7 +5,7 @@
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 class="text-4xl font-bold mb-4">Energielabel Offerte Aanvragen</h1>
         <p class="text-xl opacity-90">
-          Vul onderstaand formulier in en ontvang binnen 24 uur een offerte op maat
+          Vul onderstaand formulier in en ontvang binnen 1 werkdag een offerte op maat
         </p>
       </div>
     </section>
@@ -519,7 +519,7 @@ useHead({
   meta: [
     {
       name: 'description',
-      content: 'Vraag eenvoudig een offerte aan voor uw energielabel. Snelle service door gecertificeerde EP-adviseur. Ontvang binnen 24 uur bericht.'
+      content: 'Vraag eenvoudig een offerte aan voor uw energielabel. Snelle service door gecertificeerde EP-adviseur. Ontvang binnen 1 werkdag bericht.'
     }
   ]
 })

@@ -42,7 +42,7 @@
                   </div>
                   <h3 class="font-semibold text-foreground mb-2">2. Offerte</h3>
                   <p class="text-muted-foreground text-sm">
-                    Binnen 24 uur ontvangt u een gedetailleerde offerte
+                    Binnen 1 werkdag ontvangt u een gedetailleerde offerte
                   </p>
                 </div>
 
@@ -128,7 +128,7 @@
             <i class="pi pi-clock text-3xl text-primary mb-2"></i>
             <h4 class="font-medium text-foreground mb-2">Snelle Service</h4>
             <p class="text-sm text-muted-foreground">
-              Binnen 24 uur een offerte
+              Binnen 1 werkdag een offerte
             </p>
           </div>
           <div class="text-center">
@@ -151,7 +151,7 @@ useHead({
   meta: [
     {
       name: 'description',
-      content: 'Bedankt voor uw energielabel offerte aanvraag. We nemen binnen 24 uur contact met u op met een gedetailleerde offerte.'
+      content: 'Bedankt voor uw energielabel offerte aanvraag. We nemen binnen 1 werkdag contact met u op met een gedetailleerde offerte.'
     },
     {
       name: 'robots',

@@ -429,7 +429,7 @@
           Klaar voor uw energielabel?
         </h2>
         <p class="text-xl mb-8 opacity-90">
-          Vraag vandaag nog een vrijblijvende offerte aan en ontvang binnen 24 uur bericht
+          Vraag vandaag nog een vrijblijvende offerte aan en ontvang binnen 1 werkdag bericht
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <Button 
