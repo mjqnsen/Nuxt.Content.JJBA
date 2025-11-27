@@ -33,7 +33,8 @@
           iconPos="right"
           size="small"
           class="text-xs"
-        />
+          @click.stop
+          />
     </template>
   </Card>
 </template>

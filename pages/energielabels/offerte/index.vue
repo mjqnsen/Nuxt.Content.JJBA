@@ -379,7 +379,7 @@ const propertyTypes = [
     icon: 'pi pi-home'
   },
   {
-    value: 'Vrijstaandhuis',
+    value: 'vrijstaandhuis',
     label: 'Vrijstaandhuis',
     price: '€540,- incl. BTW',
     icon: 'pi pi-home'

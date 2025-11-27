@@ -190,7 +190,7 @@
                 </ul>
                 <Button 
                   as="a" 
-                  href="/energielabels/offerte?type=vrijstaand" 
+                  href="/energielabels/offerte?type=vrijstaandhuis" 
                   label="Offerte Aanvragen"
                   icon="pi pi-arrow-right"
                   iconPos="right"
