@@ -7,7 +7,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <!-- Title (Mobile Only - First) -->
           <div class="lg:hidden order-1 text-center">
-            <h1 class="text-6xl font-bold text-white animate-fade-in">
+            <h1 class="text-5xl sm:text-6xl font-bold text-white animate-fade-in">
               Rekenwerken, Tekenwerk, Goed bekeken werk
             </h1>
           </div>
@@ -16,27 +16,27 @@
           <div class="order-2 lg:order-2">
             <div class="flex gap-2 h-80 lg:h-96">
               <!-- First image - Wide -->
-              <div class="flex-[1.5] h-full overflow-hidden rounded-lg shadow-xl">
+              <div class="flex-[2] h-full overflow-hidden rounded-lg shadow-xl">
                 <img 
-                  src="/images/hero/Klapstraat209Westervoort03.jpg" 
-                  alt="Hero image 1"
-                  class="w-full h-full object-cover object-[55%]"
+                  src="/images/hero/plan.jpg" 
+                  alt=""
+                  class="w-full h-full object-cover object-[75%]"
                 />
               </div>
               <!-- Second image - Narrow, partial view -->
-              <div class="flex-[0.8] h-full overflow-hidden rounded-lg shadow-xl">
+              <div class="flex-[1.2] h-full overflow-hidden rounded-lg shadow-xl">
                 <img 
-                  src="/images/hero/91d.jpg" 
-                  alt="Hero image 2"
+                  src="/images/hero/inprogress.jpg" 
+                  alt=""
                   class="w-full h-full object-cover object-[55%]"
                 />
               </div>
               <!-- Third image - Narrow, partial view -->
-              <div class="flex-[0.8] h-full overflow-hidden rounded-lg shadow-xl">
+              <div class="flex-[0.6] h-full overflow-hidden rounded-lg shadow-xl">
                 <img 
-                  src="/images/hero/91b-e1697881520736.jpg" 
-                  alt="Hero image 3"
-                  class="w-full h-full object-cover object-[12%]"
+                  src="/images/hero/Klapstraat209Westervoort03.jpg" 
+                  alt=""
+                  class="w-full h-full object-cover object-[70%]"
                 />
               </div>
             </div>
