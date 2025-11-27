@@ -458,36 +458,30 @@ const submitForm = handleSubmit(async (values) => {
   isSubmitting.value = true
   
   try {
-    // Prepare form data for Formspree
-    const formData = new FormData()
+    // Prepare JSON payload
+    const payload = {
+      'Type Pand': values.propertyType || '',
+      'Voornaam': values.firstName || '',
+      'Achternaam': values.lastName || '',
+      'E-mailadres': values.email || '',
+      'Telefoonnummer': values.phone || '',
+      'Straat + Huisnummer': values.address || '',
+      'Postcode': values.postalCode || '',
+      'Plaats': values.city || '',
+      'Bouwtekeningen': values.hasBuildingPlans || '',
+      'Aanvullende informatie': values.additionalInfo || '',
+      _subject: 'Nieuwe Energielabel Offerte Aanvraag',
+      _replyto: values.email
+    }
     
-    // Add all form fields to FormData
-    formData.append('propertyType', values.propertyType || '')
-    formData.append('firstName', values.firstName || '')
-    formData.append('lastName', values.lastName || '')
-    formData.append('email', values.email || '')
-    formData.append('phone', values.phone || '')
-    formData.append('address', values.address || '')
-    formData.append('postalCode', values.postalCode || '')
-    formData.append('city', values.city || '')
-    // formData.append('surfaceArea', values.surfaceArea ? String(values.surfaceArea) : '')
-    // formData.append('buildYear', values.buildYear ? String(values.buildYear) : '')
-    // formData.append('timeline', values.timeline || '')
-    formData.append('hasBuildingPlans', values.hasBuildingPlans || '')
-    formData.append('additionalInfo', values.additionalInfo || '')
-    
-    // Add some metadata
-    formData.append('_subject', 'Nieuwe Energielabel Offerte Aanvraag')
-    formData.append('_replyto', values.email)
-    formData.append('_format', 'plain')
-    
-    // Submit to Formspree
+    // Submit to Formspark
     const response = await fetch(FORMSPARK_ACTION_URL, {
       method: 'POST',
-      body: formData,
       headers: {
+        'Content-Type': 'application/json',
         'Accept': 'application/json'
-      }
+      },
+      body: JSON.stringify(payload)
     })
     
     if (!response.ok) {
