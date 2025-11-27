@@ -301,7 +301,6 @@ import { ref, computed, onMounted } from 'vue'
 import { useForm, useField } from 'vee-validate'
 import { toTypedSchema } from '@vee-validate/zod'
 import { z } from 'zod'
-import { Botpoison } from '@botpoison/browser'
 
 // Zod validation schema
 const validationSchema = toTypedSchema(
@@ -454,19 +453,11 @@ onMounted(() => {
 
 const FORMSPARK_ACTION_URL = 'https://submit-form.com/geG1PJZG1'
 
-// Initialize Botpoison
-const botpoison = new Botpoison({
-  publicKey: 'pk_a4981bac-ee2b-4eb6-97a7-a4abd57ee9da'
-})
-
 // Form submission using VeeValidate
 const submitForm = handleSubmit(async (values) => {
   isSubmitting.value = true
   
   try {
-    // Challenge the user with Botpoison
-    const { solution } = await botpoison.challenge()
-    
     // Prepare JSON payload
     const payload = {
       'Type Pand': values.propertyType || '',
@@ -479,7 +470,6 @@ const submitForm = handleSubmit(async (values) => {
       'Plaats': values.city || '',
       'Bouwtekeningen': values.hasBuildingPlans || '',
       'Aanvullende informatie': values.additionalInfo || '',
-      _botpoison: solution,
       _subject: 'Nieuwe Energielabel Offerte Aanvraag',
       _replyto: values.email
     }
