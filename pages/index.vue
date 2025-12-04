@@ -18,27 +18,27 @@
               <!-- First image - Wide -->
               <div class="flex-[2] h-full overflow-hidden rounded-lg shadow-xl">
                 <img 
-                  src="/images/hero/plan.jpg" 
+                  src="/images/hero/depalsvoortgang.jpg" 
                   alt=""
                   class="w-full h-full object-cover object-[75%]"
                 />
               </div>
               <!-- Second image - Narrow, partial view -->
-              <div class="flex-[1.2] h-full overflow-hidden rounded-lg shadow-xl">
+              <!-- <div class="flex-[1.2] h-full overflow-hidden rounded-lg shadow-xl">
                 <img 
                   src="/images/hero/inprogress.jpg" 
                   alt=""
                   class="w-full h-full object-cover object-[55%]"
                 />
-              </div>
+              </div> -->
               <!-- Third image - Narrow, partial view -->
-              <div class="flex-[0.6] h-full overflow-hidden rounded-lg shadow-xl">
+              <!-- <div class="flex-[0.6] h-full overflow-hidden rounded-lg shadow-xl">
                 <img 
                   src="/images/hero/Klapstraat209Westervoort03.jpg" 
                   alt=""
                   class="w-full h-full object-cover object-[70%]"
                 />
-              </div>
+              </div> -->
             </div>
           </div>
           
