@@ -25,8 +25,8 @@
         </p>
         <Button 
           label="Lees Meer"
-          as="a"
-          :href="articleUrl"
+          :as="NuxtLink"
+          :to="articleUrl"
           severity="secondary" 
           text
           icon="pi pi-arrow-right"
@@ -41,6 +41,7 @@
 
 <script setup>
 import { computed } from 'vue'
+import { NuxtLink } from '#components';
 
 // Props
 const props = defineProps({

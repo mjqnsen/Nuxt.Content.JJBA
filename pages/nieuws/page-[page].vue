@@ -49,8 +49,8 @@
             Momenteel zijn er geen nieuwsartikelen beschikbaar.
           </p>
           <Button
-            as="a"
-            href="/contact"
+            :as="NuxtLink"
+            to="/contact"
             label="Neem Contact Op voor Updates"
             severity="secondary"
             outlined
@@ -62,6 +62,8 @@
 </template>
 
 <script setup>
+import { NuxtLink } from '#components';
+
 const route = useRoute();
 const router = useRouter();
 
@@ -150,7 +152,7 @@ useHead({
     // Add canonical URL
     {
       rel: "canonical",
-      href: `https://jjbouwkundigadviseurs.nl/nieuws/page-${pageNumber.value}`,
+      href: `https://janjansen.net/nieuws/page-${pageNumber.value}`,
     },
     // Add pagination links for SEO
     ...(pageNumber.value > 1
@@ -159,8 +161,8 @@ useHead({
             rel: "prev",
             href:
               pageNumber.value === 2
-                ? "https://jjbouwkundigadviseurs.nl/nieuws/page-1"
-                : `https://jjbouwkundigadviseurs.nl/nieuws/page-${pageNumber.value - 1}`,
+                ? "https://janjansen.net/nieuws/page-1"
+                : `https://janjansen.net/nieuws/page-${pageNumber.value - 1}`,
           },
         ]
       : []),
@@ -168,7 +170,7 @@ useHead({
       ? [
           {
             rel: "next",
-            href: `https://jjbouwkundigadviseurs.nl/nieuws/page-${pageNumber.value + 1}`,
+            href: `https://janjansen.net/nieuws/page-${pageNumber.value + 1}`,
           },
         ]
       : []),

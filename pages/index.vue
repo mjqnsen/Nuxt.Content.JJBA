@@ -53,15 +53,15 @@
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in-delay-2">
               <Button 
-                as="a" 
-                href="/over-ons"
+                :as="NuxtLink" 
+                to="/over-ons"
                 label="Meer Over Ons"
                 size="large"
                 class="px-8 py-3"
               />
               <Button 
-                as="a" 
-                href="/contact" 
+                :as="NuxtLink" 
+                to="/contact" 
                 label="Start Uw Project"
                 severity="secondary"
                 size="large"
@@ -143,8 +143,8 @@
                 <!-- CTA Buttons -->
                 <div class="flex flex-col sm:flex-row gap-4">
                   <Button 
-                    as="a" 
-                    href="/energielabels"
+                    :as="NuxtLink" 
+                    to="/energielabels"
                     label="Bekijk de Mogelijkheden"
                     icon="pi pi-arrow-right"
                     iconPos="right"
@@ -152,8 +152,8 @@
                     class="px-8 py-3"
                   />
                   <Button 
-                    as="a" 
-                    href="/energielabels/offerte"
+                    :as="NuxtLink" 
+                    to="/energielabels/offerte"
                     label="Direct Offerte Aanvragen"
                     severity="secondary"
                     icon="pi pi-calculator"
@@ -260,8 +260,8 @@
             </p>
           </div>
           <Button 
-            as="a" 
-            href="/nieuws/page-1" 
+            :as="NuxtLink" 
+            to="/nieuws/page-1" 
             label="Alles bekijken"
             severity="secondary"
             outlined
@@ -289,8 +289,8 @@
         <!-- Mobile View All Button -->
         <div class="text-center mt-8 sm:hidden">
           <Button 
-            as="a" 
-            href="/nieuws/page-1" 
+            :as="NuxtLink" 
+            to="/nieuws/page-1" 
             label="Alles bekijken"
             severity="secondary"
             outlined
@@ -305,6 +305,7 @@
 </template>
 
 <script setup>
+import { NuxtLink } from '#components';
 // Define layout
 definePageMeta({
   layout: 'default'

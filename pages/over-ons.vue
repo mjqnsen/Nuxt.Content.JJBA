@@ -185,8 +185,8 @@
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button 
-                    as="a" 
-                    href="/contact" 
+                    :as="NuxtLink" 
+                    to="/contact" 
                     label="Neem Contact Op"
                     icon="pi pi-envelope"
                     size="large"
@@ -212,6 +212,8 @@
 </template>
 
 <script setup>
+import { NuxtLink } from '#components';
+
 // Fetch the about content using the new v3 API
 const { data: doc } = await useAsyncData('over-ons', () => 
   queryCollection('content').path('/over-ons').first()

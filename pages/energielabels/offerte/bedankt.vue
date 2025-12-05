@@ -89,16 +89,16 @@
 
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button 
-                    as="a"
-                    href="/energielabels"
+                    :as="NuxtLink"
+                    to="/energielabels"
                     label="Terug naar Energielabels"
                     icon="pi pi-arrow-left"
                     severity="secondary"
                     outlined
                   />
                   <Button 
-                    as="a"
-                    href="/"
+                    :as="NuxtLink"
+                    to="/"
                     label="Naar Homepage"
                     icon="pi pi-home"
                   />
@@ -145,6 +145,8 @@
 </template>
 
 <script setup>
+import { NuxtLink } from '#components';
+
 // SEO
 useHead({
   title: 'Bedankt voor uw aanvraag - Jan Jansen bouwkundig adviseurs',

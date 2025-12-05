@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://janjansen.pages.dev/sitemap.xml
+Sitemap: https://janjansen.net/sitemap.xml
 
 # Disallow admin/private areas (if any in the future)
 Disallow: /admin/

@@ -45,7 +45,7 @@
       <!-- View All Button -->
       <div v-if="showViewAllButton" class="text-center mt-8">
         <Button 
-          :as="viewAllButtonLink ? 'a' : 'button'"
+          :as="viewAllButtonLink ? NuxtLink : 'button'"
           :to="viewAllButtonLink"
           :label="viewAllButtonLabel"
           severity="secondary"
@@ -60,6 +60,8 @@
 </template>
 
 <script setup>
+import { NuxtLink } from '#components';
+
 // Props
 const props = defineProps({
   title: {

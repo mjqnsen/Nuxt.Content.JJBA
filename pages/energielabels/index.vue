@@ -97,8 +97,8 @@
                   </li>
                 </ul>
                 <Button 
-                  as="a" 
-                  href="/energielabels/offerte?type=appartement" 
+                  :as="NuxtLink" 
+                  to="/energielabels/offerte?type=appartement" 
                   label="Offerte Aanvragen"
                   icon="pi pi-arrow-right"
                   iconPos="right"
@@ -143,8 +143,8 @@
                   </li>
                 </ul>
                 <Button 
-                  as="a" 
-                  href="/energielabels/offerte?type=rijtjeshuis" 
+                  :as="NuxtLink" 
+                  to="/energielabels/offerte?type=rijtjeshuis" 
                   label="Offerte Aanvragen"
                   icon="pi pi-arrow-right"
                   iconPos="right"
@@ -189,8 +189,8 @@
                   </li>
                 </ul>
                 <Button 
-                  as="a" 
-                  href="/energielabels/offerte?type=vrijstaandhuis" 
+                  :as="NuxtLink" 
+                  to="/energielabels/offerte?type=vrijstaandhuis" 
                   label="Offerte Aanvragen"
                   icon="pi pi-arrow-right"
                   iconPos="right"
@@ -230,8 +230,8 @@
                 <div class="text-2xl font-bold text-primary mb-4">€595,-</div>
                 <p class="text-sm text-muted-foreground mb-6">Basis excl. BTW en reiskosten</p>
                 <Button 
-                  as="a" 
-                  href="/energielabels/offerte?type=utiliteit-150" 
+                  :as="NuxtLink" 
+                  to="/energielabels/offerte?type=utiliteit-150" 
                   label="Neem contact op"
                   class="w-full"
                 />
@@ -247,8 +247,8 @@
                 <div class="text-2xl font-bold text-primary mb-4">€795,-</div>
                 <p class="text-sm text-muted-foreground mb-6">Basis excl. BTW en reiskosten</p>
                 <Button 
-                  as="a" 
-                  href="/energielabels/offerte?type=utiliteit-400" 
+                  :as="NuxtLink" 
+                  to="/energielabels/offerte?type=utiliteit-400" 
                   label="Neem contact op"
                   class="w-full"
                 />
@@ -264,8 +264,8 @@
                 <div class="text-2xl font-bold text-primary mb-4">In overleg</div>
                 <p class="text-sm text-muted-foreground mb-6">Basis excl. BTW en reiskosten</p>
                 <Button 
-                  as="a" 
-                  href="/energielabels/offerte?type=utiliteit-groot" 
+                  :as="NuxtLink" 
+                  to="/energielabels/offerte?type=utiliteit-groot" 
                   label="Neem contact op"
                   class="w-full"
                 />
@@ -329,8 +329,8 @@
               </div>
               <div class="text-center">
                 <Button 
-                  as="a" 
-                  href="/energielabels/offerte?type=maatwerk" 
+                  :as="NuxtLink" 
+                  to="/energielabels/offerte?type=maatwerk" 
                   label="Neem contact op voor maatwerk"
                   icon="pi pi-envelope"
                   size="large"
@@ -433,8 +433,8 @@
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <Button 
-            as="a" 
-            href="/energielabels/offerte" 
+            :as="NuxtLink" 
+            to="/energielabels/offerte" 
             label="Offerte Aanvragen"
             severity="primary"
             size="large"
@@ -458,6 +458,8 @@
 </template>
 
 <script setup>
+import { NuxtLink } from '#components';
+
 useHead({
   title: 'Energielabels - Jan Jansen bouwkundig adviseurs',
   meta: [
